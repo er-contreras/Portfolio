@@ -2,36 +2,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid gray; */
 }
 
 html {
   font-size: 62.5%;
-  /* background: brown; */
 }
 
 body {
   background: #231a59;
   min-height: 100vh;
-  /* margin: 8px; */
-  /* color: white; */
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  /* padding: 8px; */
   color: white;
   margin: 1rem;
   margin-top: 3rem;
 }
 
 header h2 {
-  margin: .5rem 1rem;
+  margin: 0.5rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: .18rem;
+  letter-spacing: 0.18rem;
   font-size: 2rem;
   font-weight: lighter;
 }
@@ -42,7 +37,6 @@ h1 {
   text-align: center;
   font-size: 3rem;
   margin-top: 1rem;
-  /* font-weight: 1000; */
 }
 
 section h2 {
@@ -68,7 +62,7 @@ p {
   font-size: 1.7rem;
   color: rgb(194, 194, 194);
   font-weight: lighter;
-  letter-spacing: .195rem;
+  letter-spacing: 0.195rem;
   text-align: center;
   padding: 1rem;
   line-height: 2.5rem;
@@ -79,7 +73,5 @@ hr {
   color: gray;
   border: none;
   height: 1px;
-  /* Set the hr color */
-  /* color: #333;  */
-  background-color: rgb(72, 72, 72); /* Modern Browsers */
+  background-color: rgb(72, 72, 72);
 }
