@@ -13,21 +13,28 @@ body {
   min-height: 100vh;
 }
 
-header {
+.flex {
   display: flex;
+}
+
+nav {
   justify-content: space-between;
   color: white;
   margin: 1rem;
   margin-top: 3rem;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .hover-button:hover {
   background: blueviolet;
 }
 
-header h2 {
+nav h2 {
   margin: 0.5rem 1rem;
-  display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 0.18rem;
@@ -58,6 +65,7 @@ section img {
 
 section {
   color: white;
+  background-image: url("Top-circles.png");
 }
 
 p {
