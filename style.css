@@ -21,6 +21,10 @@ header {
   margin-top: 3rem;
 }
 
+.hover-button:hover {
+  background: blueviolet;
+}
+
 header h2 {
   margin: 0.5rem 1rem;
   display: flex;
