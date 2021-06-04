@@ -6,21 +6,22 @@
 > This is about using figma to built our mobile project.
 
 ![screenshot](./app-screenshot.png)
+![screenshot](./about-screenshot.png)
+![screenshot](./icons-screenshot.png)
+![screenshot](./work-section.png)
 
-Mobile ScreenShot
+Mobile ScreenShots
 
 ## Built With
 
 - HTML and CSS
 
+## Skills
+
+  - Know about HTML and CSS.
+  - Ability to learn figma and new tools.
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
   - Know about Linters, HTML and CSS.
