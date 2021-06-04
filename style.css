@@ -87,6 +87,10 @@ hr {
   font-size: 1.3rem;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .language-links {
   margin: 4rem;
   line-height: 2.5rem;

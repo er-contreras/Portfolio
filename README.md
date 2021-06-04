@@ -19,7 +19,7 @@ Mobile ScreenShots
 ## Skills
 
   - Know about HTML and CSS.
-  - Learn how to use figma.
+  - Ability to learn figma and new tools.
 
 ## Getting Started
 
