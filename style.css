@@ -83,7 +83,6 @@ hr {
 }
 
 .links {
-  /* justify-content: space-between; */
   flex-wrap: wrap;
   font-size: 1.3rem;
 }
@@ -110,7 +109,7 @@ hr {
   font-family: sans-serif;
 }
 
-div p {
+div ul {
   margin-top: 1rem;
   color: rgb(216, 216, 216);
 }
@@ -183,7 +182,7 @@ main h2 {
   justify-content: space-between;
 }
 
-.vl {
+.vertical-line {
   border-left: 1.5px solid rgb(62, 62, 62);
   height: 30px;
 }
