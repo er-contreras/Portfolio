@@ -6,13 +6,15 @@
 > This is about using figma to built our mobile project.
 
 ![screenshot](./app-screenshot.png)
+![screenshot](./about-screenshot.png)
+![screenshot](./icons-screenshot.png)
+![screenshot](./work-section.png)
 
-Mobile ScreenShot
+Mobile ScreenShots
 
 ## Built With
 
 - HTML and CSS
-
 
 ## Getting Started
 
