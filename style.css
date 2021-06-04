@@ -44,7 +44,7 @@ nav h2 {
 
 h1 {
   padding: 1rem;
-  color: rgb(131, 90, 255);
+  color: rgb(148, 138, 255);
   text-align: center;
   font-size: 3rem;
   margin-top: 1rem;
@@ -58,17 +58,11 @@ section h2 {
   color: rgb(223, 223, 223);
 }
 
-section img {
-  position: absolute;
-  z-index: 1;
-}
-
-section {
-  color: white;
+.bg-image {
   background-image: url("Top-circles.png");
 }
 
-p {
+.description {
   margin-top: 5rem;
   font-family: sans-serif;
   font-size: 1.7rem;
@@ -81,9 +75,126 @@ p {
 }
 
 hr {
-  margin: 4rem 2rem;
+  margin: 1rem 2rem;
   color: gray;
   border: none;
   height: 1px;
   background-color: rgb(72, 72, 72);
+}
+
+.links {
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+}
+
+.language-links {
+  margin: 4rem;
+  line-height: 2.5rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+
+.frameworks-links {
+  margin: 4rem;
+  line-height: 2.5rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+
+.skills-links {
+  margin: 4rem;
+  margin-top: 0.5rem;
+  line-height: 2.5rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+
+div p {
+  margin-top: 1rem;
+  color: rgb(216, 216, 216);
+}
+
+div h3 {
+  font-size: 1.1rem;
+  color: rgb(148, 138, 255);
+}
+
+/* About Section Start */
+
+.icons {
+  width: 20rem;
+  justify-content: space-between;
+  margin: 7rem auto 6rem auto;
+  flex-wrap: wrap;
+}
+
+.arrow {
+  text-align: center;
+}
+
+.p {
+  font-size: 4rem;
+  width: 300px;
+  margin: 6rem 0 3rem 2rem;
+  color: rgb(148, 138, 255);
+  font-family: sans-serif;
+}
+
+/* Work Section Start */
+
+.work-section-container {
+  display: grid;
+}
+
+.white-screen {
+  width: 335px;
+  height: 220px;
+  background-color: white;
+  margin: 4rem auto;
+}
+
+main h2 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.work-p {
+  font-size: 1.8rem;
+  color: rgb(222, 222, 222);
+  margin: 1.9rem;
+  text-align: left;
+  letter-spacing: 0.1rem;
+  font-weight: lighter;
+  line-height: 2.7rem;
+  padding: 1.5rem;
+  font-family: sans-serif;
+}
+
+.vertical-lines {
+  justify-content: space-between;
+  margin: 4rem 4rem;
+}
+
+.vertical-lines p {
+  color: white;
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
+
+.vl {
+  border-left: 1.5px solid rgb(62, 62, 62);
+  height: 30px;
+}
+
+main button {
+  width: 9rem;
+  height: 4.5rem;
+  background-color: rgb(129, 117, 255);
+  color: rgb(210, 210, 210);
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  margin-left: 2rem;
+  border: 0;
 }
