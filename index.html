@@ -216,26 +216,33 @@
 
     <footer>
       <section>
-        <h2>Contact us</h2>
+        <h2>CONTACT US</h2>
 
-        <p>
+        <p class="footer-p">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
       </section>
 
-      <form class="flex" action="" method="">
-        <label for="name"></label>
-        <input type="text" id="name" name="name" placeholder="Text input" />
+      <form class="flex" action="https://formspree.io/f/mayajwdo" method="POST">
 
-        <label for="mail"></label>
-        <input type="email" id="mail" name="user_email" placeholder="Email" />
-        <textarea name="user-message" id="msg" cols="30" rows="10"></textarea>
-        <button class="btn-center" type="button">See Project</button>
+        <fieldset>
+          <label for="name"></label>
+          <input type="text" name="name" id="name" placeholder="Text input" minlength="5" maxlength="30" required/>
+  
+          <label for="email"></label>
+          <input type="email" name="email" id="email" placeholder="Email address" required/>
+
+          <textarea name="user-message" placeholder="Enter text here" minlength="3" maxlength="500" required></textarea>
+        </fieldset>
+
+        <input class="btn-center" type="submit" value="See Project">
       </form>
 
-      <div class="icons flex">
+      <hr>
+
+      <div class="icons-footer flex">
         <div>
           <a href="#"><img src="/icons/github.png" alt="github" /></a>
         </div>
@@ -256,8 +263,9 @@
           <img src="/icons/M.png" alt="medium" />
         </div>
       </div>
+
       <div class="link-email">
-        <a href="#">example.com</a>
+        <a href="#">eri89--@hotmail.com</a>
       </div>
     </footer>
   </body>

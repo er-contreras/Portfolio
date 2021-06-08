@@ -213,17 +213,21 @@ main button:active {
 
 footer h2 {
   color: #9390ff;
-  margin: 1rem;
+  margin: 1rem 1rem 2.5rem 1rem;
   margin-top: 6rem;
+  font-size: 3rem;
 }
 
-footer p {
-  color: antiquewhite;
+.footer-p {
+  color: rgb(233, 233, 233);
   margin: 1rem;
   letter-spacing: 1px;
-  line-height: 1.7rem;
+  line-height: 2.7rem;
+  font-weight: lighter;
   text-align: center;
   margin-bottom: 5rem;
+  font-size: 1.7rem;
+  font-family: sans-serif;
 }
 
 form {
@@ -231,31 +235,48 @@ form {
   margin: 1rem;
 }
 
-form input {
-  height: 30px;
+fieldset {
+  border: none;
+  width: 10rem;
+}
+
+fieldset input {
+  height: 40px;
   margin: 0 10px 10px 10px;
+  padding: 10px 0 10px 10px;
+  width: 33rem;
 }
 
-form textarea {
+fieldset textarea {
   margin: 0 10px 30px 10px;
+  padding: 10px 0 10px 10px;
+  width: 33rem;
+  height: 20rem;
 }
 
-form button {
+.btn-center {
   width: 9rem;
   height: 4.5rem;
   background-color: rgb(129, 117, 255);
   color: rgb(210, 210, 210);
   font-size: 1.1rem;
   font-family: sans-serif;
-  margin-left: 2rem;
   border: 0;
+  margin: 0 auto 6rem;
 }
 
-.btn-center {
-  margin: 0 auto;
+.icons-footer {
+  width: 20rem;
+  justify-content: space-between;
+  margin: 2rem auto 1rem auto;
+  flex-wrap: wrap;
 }
 
 .link-email {
   display: flex;
   justify-content: center;
+  font-size: 2rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+  margin-bottom: 3rem;
 }
