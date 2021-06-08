@@ -201,3 +201,12 @@ main button {
   margin-left: 2rem;
   border: 0;
 }
+
+main button:hover {
+  box-shadow: 0 10px 15px rgba(137, 68, 249, 0.454);
+}
+
+main button:active {
+  background-color: rgb(102, 20, 196);
+  box-shadow: none;
+}
