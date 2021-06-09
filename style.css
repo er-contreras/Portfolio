@@ -60,6 +60,7 @@ section h2 {
 
 .bg-image {
   background-image: url("Top-circles.png");
+  background-repeat: no-repeat;
 }
 
 .description {
@@ -263,6 +264,15 @@ fieldset textarea {
   font-family: sans-serif;
   border: 0;
   margin: 0 auto 6rem;
+}
+
+.btn-center:hover {
+  box-shadow: 0 10px 15px rgba(137, 68, 249, 0.454);
+}
+
+.btn-center:active {
+  background-color: rgb(102, 20, 196);
+  box-shadow: none;
 }
 
 .icons-footer {
