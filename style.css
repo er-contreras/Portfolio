@@ -51,7 +51,7 @@ a {
 
 h1 {
   padding: 1rem;
-  color: #9390FF;
+  color: #9390ff;
   text-align: center;
   font-size: 3rem;
   margin-top: 1rem;
@@ -218,7 +218,7 @@ main h2 {
 main button {
   width: 9rem;
   height: 4.5rem;
-  background: #9390FF;
+  background: #9390ff;
   color: rgb(210, 210, 210);
   font-size: 1.1rem;
   font-family: sans-serif;
@@ -282,7 +282,7 @@ fieldset textarea {
 .btn-center {
   width: 9rem;
   height: 4.5rem;
-  background: #9390FF;
+  background: #9390ff;
   color: rgb(210, 210, 210);
   font-size: 1.1rem;
   font-family: sans-serif;
@@ -334,6 +334,22 @@ fieldset textarea {
   background-color: rgba(0, 0, 255, 0.673);
   transition: width 2s, height 2s, background-color 2s, transform 2s;
   transform: rotate(360deg);
+}
+
+.h1-animation {
+  animation: 3s 2 alternate slidein1;
+}
+
+@keyframes slidein1 {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .h2-animation {
