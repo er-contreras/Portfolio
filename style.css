@@ -326,7 +326,7 @@ fieldset textarea {
   flex-direction: column;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .nav-ul,
   .arrow-1,
   .lets-chat {
@@ -335,7 +335,7 @@ fieldset textarea {
 }
 
 /* Media Querie */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .hamburger-button {
     display: none;
   }
