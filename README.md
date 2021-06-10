@@ -5,11 +5,11 @@
 
 > This is about using figma to built our mobile project.
 
-![screenshot](./app-screenshot.png)
-![screenshot](./about-screenshot.png)
-![screenshot](./icons-screenshot.png)
-![screenshot](./work-section.png)
-![screenshot](./formscreenshot.png)
+![screenshot](./SS/app-screenshot.png)
+![screenshot](./SS/about-screenshot.png)
+![screenshot](./SS/icons-screenshot.png)
+![screenshot](./SS/work-section.png)
+![screenshot](./SS/formscreenshot.png)
 
 Mobile ScreenShots
 
@@ -25,19 +25,21 @@ Mobile ScreenShots
 ## Getting Started
 
 ### Prerequisites
-  - Know about Linters, HTML and CSS.
+  - You should have VS Code installed or have the source-code editor of your preference.
 ### Setup
-  - Start with a copy of your old project from trials.
+  - Paste the link of the repo (you can find it in the tab "Code").
 ### Install
-  - Linters
+  - Use terminal to install it. You can use git clone follow by link of the repo.
 ### Usage
-  - Fix Errors
+  - Create a branch to make improvements in the project.
 
 ## Authors
 
 👤 **Christian Contreras**
 
 - GitHub: [@eri9-9](https://github.com/eri8-9)
+- Linkedin: [LinkedIn](https:linkedin.com/in/christian-erick-contreras-9945b820b)
+- Twitter: [@ChristianErick_](https://twitter.com/ChristianErick_)
 
 ## Show your support
 
