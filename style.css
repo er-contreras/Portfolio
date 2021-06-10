@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: #231a59;
+  background: #191765;
   min-height: 100vh;
 }
 
@@ -21,7 +21,23 @@ nav {
   justify-content: space-between;
   color: white;
   margin: 1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+
+nav h2 {
+  letter-spacing: 0.18rem;
+  font-size: 2rem;
+  font-weight: lighter;
+  padding: 0.5rem;
+}
+
+.nav-ul li {
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+
+.header {
+  flex-direction: column;
 }
 
 a {
@@ -29,17 +45,8 @@ a {
   color: white;
 }
 
-.hover-button:hover {
+.hamburger-button:hover {
   background: blueviolet;
-}
-
-nav h2 {
-  margin: 0.5rem 1rem;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 0.18rem;
-  font-size: 2rem;
-  font-weight: lighter;
 }
 
 h1 {
@@ -59,6 +66,7 @@ section h2 {
 }
 
 .bg-image {
+  margin-bottom: 2rem;
   background-image: url("Top-circles.png");
   background-repeat: no-repeat;
 }
@@ -75,17 +83,22 @@ section h2 {
   line-height: 2.5rem;
 }
 
+.links {
+  margin-top: 3rem;
+}
+
 hr {
-  margin: 1rem 2rem;
+  margin: 0 3rem;
   color: gray;
   border: none;
   height: 1px;
   background-color: rgb(72, 72, 72);
 }
 
-.links {
+.languages-desktop {
   flex-wrap: wrap;
   font-size: 1.3rem;
+  margin: 0 auto;
 }
 
 ul {
@@ -93,22 +106,24 @@ ul {
 }
 
 .language-links {
-  margin: 4rem;
+  width: 8rem;
+  margin: 3rem;
   line-height: 2.5rem;
   font-weight: lighter;
   font-family: sans-serif;
 }
 
 .frameworks-links {
-  margin: 4rem;
+  width: 8rem;
+  margin: 3rem;
   line-height: 2.5rem;
   font-weight: lighter;
   font-family: sans-serif;
 }
 
 .skills-links {
-  margin: 4rem;
-  margin-top: 0.5rem;
+  width: 8rem;
+  margin: 3rem;
   line-height: 2.5rem;
   font-weight: lighter;
   font-family: sans-serif;
@@ -125,6 +140,9 @@ div h3 {
 }
 
 /* About Section Start */
+.icons-arrows {
+  flex-direction: column;
+}
 
 .icons {
   width: 20rem;
@@ -133,7 +151,7 @@ div h3 {
   flex-wrap: wrap;
 }
 
-.arrow {
+.arrow-2 {
   text-align: center;
 }
 
@@ -151,7 +169,8 @@ div h3 {
   display: grid;
 }
 
-.white-screen {
+.white-screen-left,
+.white-screen-right {
   width: 335px;
   height: 220px;
   background-color: white;
@@ -212,7 +231,7 @@ main button:active {
   box-shadow: none;
 }
 
-footer h2 {
+.contact-us {
   color: #9390ff;
   margin: 1rem 1rem 2.5rem 1rem;
   margin-top: 6rem;
@@ -221,7 +240,7 @@ footer h2 {
 
 .footer-p {
   color: rgb(233, 233, 233);
-  margin: 1rem;
+  margin: 2rem;
   letter-spacing: 1px;
   line-height: 2.7rem;
   font-weight: lighter;
@@ -239,20 +258,21 @@ form {
 fieldset {
   border: none;
   width: 10rem;
+  margin: 0 auto;
 }
 
 fieldset input {
   height: 40px;
+  width: 33rem;
   margin: 0 10px 10px 10px;
   padding: 10px 0 10px 10px;
-  width: 33rem;
 }
 
 fieldset textarea {
-  margin: 0 10px 30px 10px;
-  padding: 10px 0 10px 10px;
   width: 33rem;
   height: 20rem;
+  margin: 0 10px 30px 10px;
+  padding: 10px 0 10px 10px;
 }
 
 .btn-center {
@@ -289,4 +309,150 @@ fieldset textarea {
   font-weight: lighter;
   font-family: sans-serif;
   margin-bottom: 3rem;
+}
+
+.work-space-1 {
+  flex-direction: column;
+}
+
+.lets-chat {
+  color: #9390ff;
+  margin: 1rem 1rem 2.5rem 1rem;
+  margin-top: 6rem;
+  font-size: 3rem;
+}
+
+.icons-and-email {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-ul,
+  .arrow-1,
+  .lets-chat {
+    display: none;
+  }
+}
+
+/* Media Querie */
+@media screen and (min-width: 800px) {
+  .hamburger-button {
+    display: none;
+  }
+
+  .header {
+    width: 40rem;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .header h1 {
+    font-size: 4rem;
+  }
+
+  .bg-image {
+    margin-top: 9rem;
+    background-image: url(two-circles-header.png);
+    background-repeat: no-repeat;
+  }
+
+  .links {
+    margin-bottom: 3rem;
+  }
+
+  .division {
+    width: 40rem;
+    margin: 0 auto;
+  }
+
+  .icons-arrows {
+    flex-direction: row;
+    margin: 3rem 20rem;
+  }
+
+  .arrow-1 img,
+  .arrow-2 img {
+    margin-top: 5rem;
+  }
+
+  .p {
+    margin: 15rem 10rem 3rem;
+    width: auto;
+  }
+
+  main {
+    margin-top: 3rem;
+  }
+
+  .work-space-1 {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .work-space-2 {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+  }
+
+  .white-screen-left {
+    margin: 2rem;
+    width: 535px;
+    height: 420px;
+  }
+
+  .white-screen-right {
+    margin: 2rem;
+    width: 535px;
+    height: 420px;
+  }
+
+  .work-section-description {
+    width: 40rem;
+  }
+
+  .contact-us {
+    display: none;
+  }
+
+  .lets-chat-section {
+    margin: 0 auto;
+  }
+
+  .footer-p {
+    margin: 0 20rem;
+  }
+
+  fieldset input {
+    width: 63rem;
+    height: 40px;
+  }
+
+  fieldset textarea {
+    width: 63rem;
+    height: 20rem;
+  }
+
+  .icons-and-email {
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem;
+  }
+
+  .icons-footer {
+    margin: 2rem;
+  }
+
+  .link-email {
+    margin-top: 2rem;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  .nav-ul-img img {
+    width: 3rem;
+  }
 }
