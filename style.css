@@ -354,12 +354,6 @@ fieldset textarea {
     font-size: 4rem;
   }
 
-  .bg-image {
-    margin-top: 9rem;
-    background-image: url(two-circles-header.png);
-    /* background-repeat: no-repeat; */
-  }
-
   .links {
     margin-bottom: 3rem;
   }
