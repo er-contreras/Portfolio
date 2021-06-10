@@ -51,7 +51,7 @@ a {
 
 h1 {
   padding: 1rem;
-  color: rgb(148, 138, 255);
+  color: #9390FF;
   text-align: center;
   font-size: 3rem;
   margin-top: 1rem;
@@ -66,12 +66,12 @@ section h2 {
 }
 
 .background-top {
-  background: left 5% / 95% 70% repeat-x url(./BG/top-section.png);
+  background: left 5% / 100% 70% repeat-x url(./BG/top-section.png);
   background-repeat: no-repeat;
 }
 
 .background-bottom {
-  background: left 5% / 95% 70% repeat-x url(./BG/bottom-section.png);
+  background: left 5% / 100% 70% repeat-x url(./BG/bottom-section.png);
   background-repeat: no-repeat;
 }
 
@@ -218,7 +218,7 @@ main h2 {
 main button {
   width: 9rem;
   height: 4.5rem;
-  background-color: rgb(129, 117, 255);
+  background: #9390FF;
   color: rgb(210, 210, 210);
   font-size: 1.1rem;
   font-family: sans-serif;
@@ -282,7 +282,7 @@ fieldset textarea {
 .btn-center {
   width: 9rem;
   height: 4.5rem;
-  background-color: rgb(129, 117, 255);
+  background: #9390FF;
   color: rgb(210, 210, 210);
   font-size: 1.1rem;
   font-family: sans-serif;
@@ -328,6 +328,12 @@ fieldset textarea {
 
 .icons-and-email {
   flex-direction: column;
+}
+
+.btn-transition:hover {
+  background-color: rgba(0, 0, 255, 0.673);
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  transform: rotate(360deg);
 }
 
 @media screen and (max-width: 1000px) {
