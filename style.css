@@ -68,11 +68,13 @@ section h2 {
 .background-top {
   background: left 5% / 100% 70% repeat-x url(./BG/top-section.png);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .background-bottom {
-  background: left 5% / 100% 70% repeat-x url(./BG/bottom-section.png);
+  background: left 5% / 100% 70% repeat-x url(./BG/background-bottom-mobile.png);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .description {
@@ -337,7 +339,7 @@ fieldset textarea {
 }
 
 .h1-animation {
-  animation: 3s 2 alternate slidein1;
+  animation: 3s 1 alternate slidein1;
 }
 
 @keyframes slidein1 {
@@ -353,7 +355,7 @@ fieldset textarea {
 }
 
 .h2-animation {
-  animation: 3s 2 alternate slidein;
+  animation: 3s 1 alternate slidein;
 }
 
 @keyframes slidein {
@@ -490,5 +492,11 @@ fieldset textarea {
 
   .nav-ul-img img {
     width: 3rem;
+  }
+
+  .background-bottom {
+    background: left 5% / 100% 70% repeat-x url(./BG/bottom-section.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
