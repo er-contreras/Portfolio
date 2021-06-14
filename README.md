@@ -15,7 +15,8 @@ Mobile ScreenShots
 
 ## Link of Web Page
 
-- 
+- GitHub Pages: [@eri8-9](https://eri8-9.github.io/Portfolio-setup-and-mobile-version-skeleton/
+)
 
 ## Built With
 
@@ -41,7 +42,7 @@ Mobile ScreenShots
 
 👤 **Christian Contreras**
 
-- GitHub: [@eri9-9](https://github.com/eri8-9)
+- GitHub: [@eri8-9](https://github.com/eri8-9)
 - Linkedin: [LinkedIn](https:linkedin.com/in/christian-erick-contreras-9945b820b)
 - Twitter: [@ChristianErick_](https://twitter.com/ChristianErick_)
 
