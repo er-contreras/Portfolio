@@ -71,12 +71,6 @@ section h2 {
   background-size: contain;
 }
 
-.background-bottom {
-  background: left 5% / 100% 70% repeat-x url(./BG/background-bottom-mobile.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .description {
   margin-top: 5rem;
   font-family: sans-serif;
@@ -375,6 +369,14 @@ fieldset textarea {
   .arrow-1,
   .lets-chat {
     display: none;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .background-bottom {
+    background: left 5% / 100% 70% repeat-x url(./BG/background-bottom-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
