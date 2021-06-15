@@ -24,6 +24,14 @@ nav {
   margin-top: 2rem;
 }
 
+h1 {
+  padding: 1rem;
+  color: #9390ff;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
 nav h1 {
   color: white;
   letter-spacing: 0.18rem;
@@ -48,14 +56,6 @@ a {
 
 .hamburger-button:hover {
   background: blueviolet;
-}
-
-h1 {
-  padding: 1rem;
-  color: #9390ff;
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 1rem;
 }
 
 section h2 {
