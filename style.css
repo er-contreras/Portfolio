@@ -24,6 +24,53 @@ nav {
   margin-top: 2rem;
 }
 
+.hamburger-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #191765;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(/BG/shapes-mobile-menu.png);
+}
+
+.menu div {
+  width: 90%;
+  border: 1px solid gray;
+  justify-content: flex-end;
+}
+
+.menu ul {
+  width: 90%;
+  border: 1px solid gray;
+  font-size: 24px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.menu li {
+  margin-bottom: 40px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li i{
+  color: #7D73FC;
+}
+
 h1 {
   padding: 1rem;
   color: #9390ff;
@@ -54,9 +101,9 @@ a {
   color: white;
 }
 
-.hamburger-button:hover {
+/* .hamburger-button:hover {
   background: blueviolet;
-}
+} */
 
 section h2 {
   text-align: center;
@@ -333,9 +380,9 @@ fieldset textarea {
   transform: rotate(360deg);
 }
 
-.h1-animation {
+/* .h1-animation {
   animation: 3s 1 alternate slidein1;
-}
+} */
 
 @keyframes slidein1 {
   0% {
@@ -349,9 +396,9 @@ fieldset textarea {
   }
 }
 
-.h2-animation {
+/* .h2-animation {
   animation: 3s 1 alternate slidein;
-}
+} */
 
 @keyframes slidein {
   0% {
