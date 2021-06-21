@@ -33,18 +33,17 @@
         </li>
       </ul>
 
-      <button class="hamburger-button"><i class="fas fa-bars fa-2x"></i></button>
+      <button class="hamburger-button" type="button" onclick="openMenu()"><i class="fas fa-bars fa-2x"></i></button>
     </nav>
 
-    <menu class="menu flex">
+    <menu class="menu-dropdown flex">
       <div class="flex">
-        <button class="close-btn"><i class="fas fa-times fa-lg"></i></button>
+        <button class="close-btn" onclick="closeMenu()"><i class="fas fa-times fa-lg"></i></button>
       </div>
-
       <ul>
-        <li>Portfolio<i class="fas fa-chevron-right fa-xs"></i></li>
-        <li>About<i class="fas fa-chevron-right fa-xs"></i></li>
-        <li>Contact<i class="fas fa-chevron-right fa-xs"></i></li>
+        <li onclick="closeMenu()">Portfolio<i class="fas fa-chevron-right fa-xs"></i></li>
+        <li onclick="closeMenu()">About<i class="fas fa-chevron-right fa-xs"></i></li>
+        <li onclick="closeMenu()">Contact<i class="fas fa-chevron-right fa-xs"></i></li>
       </ul>
     </menu>
 
@@ -351,5 +350,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
