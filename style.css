@@ -17,7 +17,7 @@ body {
   display: flex;
 }
 
-nav {
+.nav-top {
   justify-content: space-between;
   color: white;
   margin: 1rem;
@@ -53,7 +53,16 @@ nav {
 .close-btn {
   background-color: transparent;
   border: none;
-  color: #EDECFF;
+  color: #edecff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div ul {
+  margin-top: 1rem;
+  color: rgb(216, 216, 216);
 }
 
 .menu-dropdown ul {
@@ -72,8 +81,8 @@ nav {
   align-items: center;
 }
 
-.menu-dropdown li i{
-  color: #7D73FC;
+.menu-dropdown li i {
+  color: #7d73fc;
 }
 
 h1 {
@@ -154,10 +163,6 @@ hr {
   margin: 0 auto;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .language-links {
   width: 8rem;
   margin: 3rem;
@@ -180,11 +185,6 @@ ul {
   line-height: 2.5rem;
   font-weight: lighter;
   font-family: sans-serif;
-}
-
-div ul {
-  margin-top: 1rem;
-  color: rgb(216, 216, 216);
 }
 
 div h3 {

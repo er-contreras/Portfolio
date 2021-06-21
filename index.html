@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KDMNH1PW4"></script>
     <script>
@@ -10,7 +11,6 @@
 
       gtag('config', 'G-2KDMNH1PW4', { 'send_page_view': false });
     </script>
-    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eri8-9 Portfolio</title>
@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="flex">
+    <nav class="flex nav-top">
       <h1>John Doe</h1>
 
       <ul class="nav-ul flex">
@@ -36,16 +36,16 @@
       <button class="hamburger-button" type="button" onclick="openMenu()"><i class="fas fa-bars fa-2x"></i></button>
     </nav>
 
-    <menu class="menu-dropdown flex">
+    <nav class="menu-dropdown flex">
       <div class="flex">
-        <button class="close-btn" onclick="closeMenu()"><i class="fas fa-times fa-lg"></i></button>
+        <button type="button" class="close-btn" onclick="closeMenu()"><i class="fas fa-times fa-lg"></i></button>
       </div>
       <ul>
         <li onclick="closeMenu()">Portfolio<i class="fas fa-chevron-right fa-xs"></i></li>
         <li onclick="closeMenu()">About<i class="fas fa-chevron-right fa-xs"></i></li>
         <li onclick="closeMenu()">Contact<i class="fas fa-chevron-right fa-xs"></i></li>
       </ul>
-    </menu>
+    </nav>
 
     <div class="background-top">
       <section>
