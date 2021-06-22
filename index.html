@@ -25,6 +25,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -113,8 +116,6 @@
     </div>
 
     <hr class="division flex" />
-
-
 
     <div class="icons-arrows flex">
       <div class="arrow-1">
@@ -215,7 +216,7 @@
               <p>Ruby</p>
             </div>
 
-            <button class="btn-transition" type="button">See Project</button>
+            <button data-modal-target="#modal" class="btn-transition" type="button">See Project</button>
           </section>
         </div>
 
@@ -247,7 +248,7 @@
               <p>Ruby</p>
             </div>
 
-            <button class="btn-transition" type="button">See Project</button>
+            <button data-modal-target="#modal" class="btn-transition" type="button">See Project</button>
           </section>
         </div>
 
@@ -279,7 +280,7 @@
               <p>Ruby</p>
             </div>
 
-            <button class="btn-transition" type="button">See Project</button>
+            <button data-modal-target="#modal" class="btn-transition" type="button">See Project</button>
           </section>
         </div>
       </div>
@@ -342,43 +343,46 @@
       </div>
     </footer>
   </div>
+
   <div class="modal" id="modal">
     <div class="modal-header flex">
       <div class="title">Multi - Post stories</div>
-      <button data-close-button class="close-button">&times;</button>
+      <button type="button" data-close-button class="close-button">&times;</button>
     </div>
     <div class="snapshoot"></div>
     <div class="modal-body">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate amet voluptatum perspiciatis minus quaerat,
-      quam magnam temporibus adipisci tenetur recusandae, totam, rerum consequuntur. Enim aut aperiam esse, possimus
-      unde doloribus soluta eaque eos, quia porro nemo, voluptatem perspiciatis est expedita libero id sed itaque
-      commodi aliquid. Quas repellendus illum soluta voluptatum quo molestias earum veritatis provident nulla mollitia
-      accusantium amet omnis iste sequi sit dolores, ex neque placeat hic sunt possimus modi impedit totam. Perferendis
-      vitae quam voluptate autem molestias?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur tempore voluptatum id nihil ipsum culpa placeat quibusdam perferendis incidunt dicta neque, mollitia in quo provident eum rerum porro et est nulla. Esse molestiae fuga ad incidunt facere assumenda excepturi repellendus atque accusantium officia consectetur laborum qui eum aut, dolorum voluptatum doloribus asperiores quos recusandae a? Quo dignissimos magni suscipit similique aspernatur iusto nisi velit natus quod sed. Reiciendis mollitia quisquam hic architecto tempora vero ex cupiditate deserunt voluptatem corporis.
     </div>
 
     <div class="vertical-lines flex">
-      <p>css</p>
-
       <div class="vertical-line"></div>
-
       <p>html</p>
-
       <div class="vertical-line"></div>
-
-      <p>bootstrap</p>
-
+      <p>Ruby on rails</p>
       <div class="vertical-line"></div>
-
-      <p>Ruby</p>
+      <p>css</p>
+      <div class="vertical-line"></div>
     </div>
 
-    <button class="btn-transition" type="button">See Project
-    </button>
+    <div class="flex vertical-lines-desktop">
+      <div class="vertical-line"></div>
+      <p>html</p>
+      <div class="vertical-line"></div>
+      <p>Ruby on rails</p>
+      <div class="vertical-line"></div>
+      <p>css</p>
+      <div class="vertical-line"></div>
+      <p>Github</p>
+      <div class="vertical-line"></div>
+    </div>
 
+    <div class="window-btn flex">
+      <button class="window-btn-1 flex" type="button">See Live
+        <img src="icons/Icon-btn.png" alt="github-link" /></button>
 
-    <button class="btn-transition" type="button">See Project
-    </button>
+      <button class="window-btn-2 flex" type="button">See Source<img src="icons/github.png" alt="github-link" />
+      </button>
+    </div>
 
   </div>
   <div id="overlay"></div>
