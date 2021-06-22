@@ -42,6 +42,24 @@ body {
   justify-content: flex-start;
   align-items: center;
   background-image: url(/BG/shapes-mobile-menu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-top {
+  background-image: url(./BG/top-circles-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.background-bottom {
+  background-image: url(./BG/background-bottom-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.works {
+  flex-direction: column;
 }
 
 .menu-dropdown div {
@@ -127,26 +145,21 @@ section h2 {
   color: rgb(223, 223, 223);
 }
 
-.background-top {
-  background: left 5% / 100% 70% repeat-x url(./BG/top-section.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .description {
   margin-top: 5rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.7rem;
   color: rgb(194, 194, 194);
-  font-weight: lighter;
+  font-weight: 320;
   letter-spacing: 0.195rem;
   text-align: center;
   padding: 1rem;
   line-height: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .links {
-  margin-top: 3rem;
+  margin-left: 2rem;
 }
 
 hr {
@@ -168,7 +181,7 @@ hr {
   margin: 3rem;
   line-height: 2.5rem;
   font-weight: lighter;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .frameworks-links {
@@ -176,7 +189,7 @@ hr {
   margin: 3rem;
   line-height: 2.5rem;
   font-weight: lighter;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .skills-links {
@@ -184,7 +197,7 @@ hr {
   margin: 3rem;
   line-height: 2.5rem;
   font-weight: lighter;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 div h3 {
@@ -213,11 +226,10 @@ div h3 {
   width: 300px;
   margin: 6rem 0 3rem 2rem;
   color: rgb(148, 138, 255);
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Work Section Start */
-
 .work-section-container {
   display: grid;
 }
@@ -238,14 +250,14 @@ main h2 {
 
 .work-p {
   font-size: 1.8rem;
-  color: rgb(222, 222, 222);
+  color: #dcdce8;
   margin: 1.9rem;
   text-align: left;
   letter-spacing: 0.1rem;
-  font-weight: lighter;
+  font-weight: 200;
   line-height: 2.7rem;
   padding: 1.5rem;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .vertical-lines {
@@ -270,7 +282,7 @@ main button {
   background: #9390ff;
   color: rgb(210, 210, 210);
   font-size: 1.1rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-left: 2rem;
   border: 0;
 }
@@ -300,7 +312,7 @@ main button:active {
   text-align: center;
   margin-bottom: 5rem;
   font-size: 1.7rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 form {
@@ -334,7 +346,7 @@ fieldset textarea {
   background: #9390ff;
   color: rgb(210, 210, 210);
   font-size: 1.1rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   border: 0;
   margin: 0 auto 6rem;
 }
@@ -360,7 +372,7 @@ fieldset textarea {
   justify-content: center;
   font-size: 2rem;
   font-weight: lighter;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 3rem;
 }
 
@@ -426,10 +438,10 @@ fieldset textarea {
 }
 
 @media screen and (max-width: 396px) {
-  .background-bottom {
-    background: left 5% / 100% 70% repeat-x url(./BG/background-bottom-mobile.png);
+  .menu-dropdown {
+    background-image: url(./BG/background-bottom-mobile.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -550,8 +562,14 @@ fieldset textarea {
   }
 
   .background-bottom {
-    background: left 5% / 100% 70% repeat-x url(./BG/bottom-section.png);
+    background: url(./BG/bottom-section-desktop.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+  }
+
+  .background-top {
+    background: url(./BG/top-section-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
