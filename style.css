@@ -17,6 +17,14 @@ body {
   display: flex;
 }
 
+.main-container {
+  filter: blur(0);
+}
+
+.main-container.active {
+  filter: blur(8px);
+}
+
 .nav-top {
   justify-content: space-between;
   color: white;
@@ -434,6 +442,7 @@ fieldset textarea {
   position: fixed;
   top: 50%;
   left: 50%;
+  background-color: white;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   border: 1px solid white;
