@@ -9,20 +9,12 @@ html {
 }
 
 body {
-  background: #191765;
+  background: #13114f;
   min-height: 100vh;
 }
 
 .flex {
   display: flex;
-}
-
-.main-container {
-  filter: blur(0);
-}
-
-.main-container.active {
-  filter: blur(8px);
 }
 
 .nav-top {
@@ -432,106 +424,105 @@ fieldset textarea {
   }
 }
 
-/* Popup window -----------------------------------> */
-.modal {
+/* Modal popup Window */
+.divClass {
   position: fixed;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.16);
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  border: 1px solid white;
-  z-index: 10;
-  width: 327px;
-  height: 637px;
+  display: flex;
+  flex-direction: column;
+  width: 337px;
+  height: 787px;
 }
 
-.title {
+.h1Class {
   color: white;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
 }
 
-.modal.active {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.modal-header {
-  padding: 10px 15px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.modal-header .close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 2rem;
-  font-weight: lighter;
-  color: #dcdce8;
-}
-
-.modal-body {
-  color: white;
-  text-align: center;
-  padding: 10px 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-}
-
-.close-btn {
-  background-color: transparent;
-  border: none;
-  color: #fefefe;
-}
-
-#overlay {
-  position: fixed;
-  opacity: 0;
-  transition: 200ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-}
-
-#overlay.active {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.snapshoot {
-  background-image: url(./BG/Snapshoot-Portfolio.png);
+.imgClass {
+  margin: 0 auto;
   width: 279px;
   height: 181px;
-  flex-direction: column;
-  margin: 0 auto;
 }
 
-.window-btn {
-  flex-direction: column;
+.pClass {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin: 24px;
+  color: #ffff;
+  padding: 5px;
+}
+
+.vertical-lines-modal {
+  display: flex;
+  justify-content: space-around;
+  color: #ffff;
+  font-family: "Poppins", sans-serif;
+  margin: 0 41px;
+}
+
+.vertical-line-modal {
+  border-left: 1.5px solid #81818c;
+  height: 30px;
+}
+
+.techs {
+  display: flex;
   align-items: center;
 }
 
-.window-btn-1 {
-  margin-top: 15px;
-  width: 108px;
-  height: 49px;
-  background-color: #7d73fc;
-  color: #ffff;
-  border: none;
+.divBtns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
 }
 
-.window-btn-2 {
-  margin-top: 15px;
-  width: 124px;
-  height: 49px;
+.newBtn {
+  width: 108px;
+  height: 48px;
   background-color: #7d73fc;
-  color: #ffff;
   border: none;
+  color: #ffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.newBtn2 {
+  margin-top: 24px;
+  width: 124px;
+  height: 48px;
+  background-color: #7d73fc;
+  border: none;
+  color: #ffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.divHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 278px;
+  height: 58px;
+  margin-left: 20px;
+}
+
+.divBtnClass {
+  margin-top: 19px;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: #ffff;
 }
 
 @media screen and (max-width: 1000px) {
@@ -682,49 +673,103 @@ fieldset textarea {
     background-size: cover;
   }
 
-  /* Popup window -----------------------------------> */
-  .modal {
-    width: 75%;
-    height: 96%;
+  /* Modal popup Window */
+  .divClass {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.16);
+    display: flex;
+    flex-direction: column;
+    width: 1156px;
+    height: 1176px;
   }
 
-  .modal-body {
-    margin: 5px 100px;
-  }
-
-  .snapshoot {
-    background-image: url(./BG/Snapshoot-Portfolio-desktop.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 800px;
-    height: 300px;
-  }
-
-  .window-btn {
+  .divHeader {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 6rem 28rem;
+    width: 1056px;
+    height: 48px;
   }
 
-  .window-btn-1,
-  .window-btn-2 {
+  .h1Class {
+    color: white;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .imgClass {
+    margin: 0 auto;
+    width: 1108px;
+    height: 505px;
+    margin-top: 40px;
+  }
+
+  .pClass {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    width: 684px;
+    height: 236px;
+    margin: 24px 236px;
+    color: #ffff;
+    padding: 5px;
+  }
+
+  .vertical-lines-modal {
+    display: flex;
     justify-content: space-around;
-    text-decoration: none;
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    margin: 56px 421px 0;
+    width: 304px;
+    height: 41px;
+  }
+
+  .vertical-line-modal {
+    border-left: 1.5px solid #81818c;
+    height: 30px;
+  }
+
+  .techs {
+    display: flex;
     align-items: center;
   }
 
-  .vertical-lines {
-    display: none;
-  }
-
-  .vertical-lines-desktop {
+  .divBtns {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin: 6rem 28rem;
-    font-family: 'Poppins', sans-serif;
-    color: white;
+    width: 300px;
+    height: 48px;
+    align-items: center;
+    margin: 48px auto;
   }
 
-  .close-button {
-    font-size: 6rem;
+  .newBtn {
+    width: 108px;
+    height: 48px;
+    background-color: #7d73fc;
+    border: none;
+    color: #ffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .newBtn2 {
+    margin-top: 0;
+  }
+
+  .divBtnClass {
+    margin-top: 19px;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #ffff;
   }
 }
