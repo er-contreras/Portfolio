@@ -47,6 +47,9 @@ const projects = [
 
 // Bounce the button of see project with the window you going to generate with javascript.
 const btn = document.querySelector('.openWindow');
+const btn2 = document.querySelector('.openWindow2');
+const btn3 = document.querySelector('.openWindow3');
+const btn4 = document.querySelector('.openWindow4');
 const mainContainer = document.querySelector('.mainContainer');
 
 // Create a div to open the window into the div.
@@ -185,6 +188,21 @@ function addElement() {
 
 // After clicking in the button the window popup to show your project deatails.
 btn.addEventListener('click', () => {
+  addElement();
+  mainContainer.style.filter = 'blur(20px)';
+});
+
+btn2.addEventListener('click', () => {
+  addElement();
+  mainContainer.style.filter = 'blur(20px)';
+});
+
+btn3.addEventListener('click', () => {
+  addElement();
+  mainContainer.style.filter = 'blur(20px)';
+});
+
+btn4.addEventListener('click', () => {
   addElement();
   mainContainer.style.filter = 'blur(20px)';
 });
