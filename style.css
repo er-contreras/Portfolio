@@ -537,6 +537,21 @@ fieldset textarea {
   color: #ffff;
 }
 
+/* Form cSs */
+form input.error {
+  border-color: #e74c3c;
+}
+
+form input.success {
+  border-color: #c3e6cb;
+}
+
+.labelformat {
+  color: red;
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+
 @media screen and (max-width: 1000px) {
   .nav-ul,
   .arrow-1,
