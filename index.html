@@ -169,17 +169,18 @@
         </p>
       </section>
 
-      <form class="flex" action="https://formspree.io/f/mayajwdo" method="POST">
+      <form id="signup" class="flex" action="https://formspree.io/f/mayajwdo" method="POST">
         <fieldset>
           <label for="name"></label>
           <input type="text" name="name" id="name" placeholder="Text input" minlength="5" maxlength="30" required />
 
           <label for="email"></label>
-          <input type="email" name="email" id="email" placeholder="Email address" required />
+          <input type="email" name="email" id="email" placeholder="Email address"/>
 
           <textarea name="user-message" placeholder="Enter text here" minlength="3" maxlength="500" required></textarea>
         </fieldset>
-
+          
+        <label class="labelformat" for="email"></label>
         <input class="btn-center" type="submit" value="See Project" />
       </form>
 
