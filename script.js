@@ -55,7 +55,7 @@ const projects = [
 // We need a id for reference our JS section.
 const works = document.querySelector('.works');
 
-for (let i = 0; i < projects.length; i++) {
+for (let i = 0; i < projects.length; i += 1) {
   // Work Section 1
   const divWorkSpace = document.createElement('div');
   const divWhiteScreenLeft = document.createElement('div');
@@ -72,7 +72,7 @@ for (let i = 0; i < projects.length; i++) {
   const divVerticalLine3 = document.createElement('div');
   const buttonWorkSection = document.createElement('button');
 
-  if((i + 1) % 2 === 0) {
+  if ((i + 1) % 2 === 0) {
     divWorkSpace.classList.add('work-space-2');
   } else {
     divWorkSpace.classList.add('work-space-1');
@@ -155,7 +155,6 @@ function addElement() {
   const imgBtn2 = document.createElement('img');
   const tech4 = document.createElement('p');
   const verticalLine5 = document.createElement('div');
-
 
   modal.className = 'divClass';
   modal.classList.add('divClassClose');
@@ -295,7 +294,7 @@ const mybutton = document.getElementById('myBtn');
 
 // When the user scrolls down 20px from the top of the document, show the button
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.          documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = 'block';
   } else {
     mybutton.style.display = 'none';
