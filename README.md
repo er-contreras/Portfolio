@@ -20,12 +20,13 @@ Mobile ScreenShots
 
 ## Built With
 
-- HTML and CSS
+- HTML, CSS & JS
 
 ## Skills
 
-  - Know about HTML and CSS.
-  - Ability to learn figma and new tools.
+  - Systematic
+  - Creative
+  - Persistent
 
 ## Getting Started
 
@@ -40,7 +41,7 @@ Mobile ScreenShots
 
 ## Authors
 
-👤 **Christian Contreras**
+👤 **Christian Erick Contreras**
 
 - GitHub: [@eri8-9](https://github.com/eri8-9)
 - Linkedin: [LinkedIn](https:linkedin.com/in/christian-erick-contreras-9945b820b)
@@ -52,7 +53,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
--Microverse
+- Microverse
 
 ## 📝 License
 
