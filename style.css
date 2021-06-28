@@ -261,17 +261,10 @@ main h2 {
   flex-direction: column;
 }
 
-.white-screen-left {
+.white-screen {
   width: 327px;
   height: 236px;
   background-color: rgb(255, 255, 255);
-  margin: 48px 24px 24px;
-}
-
-.white-screen-right {
-  width: 327px;
-  height: 236px;
-  background-color: white;
   margin: 48px 24px 24px;
 }
 
@@ -628,13 +621,7 @@ form input.success {
     margin: 0 auto;
   }
 
-  .white-screen-left {
-    margin: 2rem;
-    width: 684px;
-    height: 448px;
-  }
-
-  .white-screen-right {
+  .white-screen {
     margin: 2rem;
     width: 684px;
     height: 448px;
