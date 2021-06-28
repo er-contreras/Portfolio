@@ -121,6 +121,7 @@ for (let i = 0; i < projects.length; i += 1) {
   buttonWorkSection.setAttribute('type', 'button');
   buttonWorkSection.setAttribute('onclick', 'topFunction()');
   buttonWorkSection.classList.add('btn-transition', `openWindow${i}`);
+  buttonWorkSection.id = 'myBtn';
   section.appendChild(buttonWorkSection);
 }
 
