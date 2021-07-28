@@ -1,3 +1,5 @@
 # Ignoring these files
 
 node_modules/
+
+.vscode
