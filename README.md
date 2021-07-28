@@ -5,11 +5,11 @@
 
 > This is about using figma to built our mobile project.
 
-<div style="text-align:center"><img src="./SS/app-screenshot.png" /></div>
-<div style="text-align:center"><img src="./SS/about-screenshot.png" /></div>
-<div style="text-align:center"><img src="./SS/icons-screenshot.png" /></div>
-<div style="text-align:center"><img src="./SS/work-section.png" /></div>
-<div style="text-align:center"><img src="./SS/formscreenshot.png" /></div>
+<div style="align:center"><img src="./SS/app-screenshot.png" /></div>
+<div style="align:center"><img src="./SS/about-screenshot.png" /></div>
+<div style="align:center"><img src="./SS/icons-screenshot.png" /></div>
+<div style="align:center"><img src="./SS/work-section.png" /></div>
+<div style="align:center"><img src="./SS/formscreenshot.png" /></div>
 
 Mobile ScreenShots
 
