@@ -1,56 +1,4 @@
-const menu = document.querySelector('.menu-dropdown');
-
-function openMenu() {
-  menu.style.visibility = 'visible';
-}
-
-function closeMenu() {
-  menu.style.visibility = 'hidden';
-}
-
-openMenu();
-closeMenu();
-
-// Data of the projects section.
-const projects = [
-  {
-    name: 'Multi - Post stories One',
-    descriptionMobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    descriptionMobilePopup: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
-    descriptionDesktopPopUp: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.',
-    image: 'todo-list.png',
-    technologies: ['html', 'Ruby on rails', 'css'],
-    link: 'https://eri8-9.github.io/todo-list/dist/',
-  },
-  {
-    name: 'Multi - Post stories Two',
-    descriptionMobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    descriptionMobilePopup: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
-    descriptionDesktopPopUp: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.',
-    image: './BG/Snapshoot-Portfolio.png',
-    technologies: ['html', 'Ruby on rails', 'css'],
-    link: 'link_to_live_version.com',
-  },
-  {
-    name: 'Multi - Post stories Three',
-    descriptionMobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    descriptionMobilePopup: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
-    descriptionDesktopPopUp: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.',
-    image: './BG/Snapshoot-Portfolio.png',
-    technologies: ['html', 'Ruby on rails', 'css'],
-    link: 'link_to_live_version.com',
-  },
-  {
-    name: 'Multi - Post stories Four',
-    descriptionMobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    descriptionMobilePopup: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
-    descriptionDesktopPopUp: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.',
-    image: './BG/Snapshoot-Portfolio.png',
-    technologies: ['html', 'Ruby on rails', 'css'],
-    link: 'link_to_live_version.com',
-  },
-];
-
+import projects from "../modules/projectsInfo.js";
 // First, from where our work section will be located?
 // We need a id for reference our JS section.
 const works = document.querySelector('.works');
@@ -150,6 +98,7 @@ function addElement() {
   const tech3 = document.createElement('p');
   const verticalLine4 = document.createElement('div');
   const newBtn = document.createElement('button');
+  const newBtnAnchor = document.createElement('a');
   const newBtn2 = document.createElement('button');
   const divBtns = document.createElement('div');
   const imgBtn1 = document.createElement('img');
@@ -242,6 +191,7 @@ function addElement() {
 
   newBtn.className = 'newBtn';
   newBtn.textContent = 'See Live';
+  newBtn.appendChild(newBtnAnchor);
   divBtns.appendChild(newBtn);
 
   newBtn2.className = 'newBtn2';
@@ -289,30 +239,6 @@ btn4.addEventListener('click', () => {
   addElement();
   mainContainer.style.filter = 'blur(20px)';
 });
-
-// Get to the top with a button
-const mybutton = document.getElementById('myBtn');
-
-// When the user scrolls down 20px from the top of the document, show the button
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = 'block';
-  } else {
-    mybutton.style.display = 'none';
-  }
-}
-
-window.onscroll = () => {
-  scrollFunction();
-};
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-topFunction();
 
 /* Client Validation */
 const form = document.getElementById('signup');

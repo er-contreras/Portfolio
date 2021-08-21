@@ -450,7 +450,7 @@ fieldset textarea {
 
 .imgClass {
   margin: 0 auto;
-  width: 279px;
+  width: auto;
   height: 181px;
 }
 
