@@ -1,5 +1,5 @@
 // Get to the top with a button
-const mybutton = document.getElementById('myBtn');
+// const mybutton = document.getElementById('myBtn');
 
 // When the user scrolls down 20px from the top of the document, show the button
 // function scrollFunction() {
