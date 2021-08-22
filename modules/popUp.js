@@ -27,7 +27,6 @@ function addElement() {
   const verticalLine5 = document.createElement('div');
 
   modal.className = 'divClass';
-  modal.classList.add('divClassClose');
   document.body.appendChild(modal);
 
   // Header and Close Btn
