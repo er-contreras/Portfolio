@@ -80,7 +80,7 @@ const btn = document.querySelector('.openWindow0');
 const btn2 = document.querySelector('.openWindow1');
 const btn3 = document.querySelector('.openWindow2');
 const btn4 = document.querySelector('.openWindow3');
-const mainContainer = document.querySelector('.mainContainer');
+const mainContainer = document.querySelector('.main-container');
 
 // After clicking in the button the window popup to show your project deatails.
 btn.addEventListener('click', () => {

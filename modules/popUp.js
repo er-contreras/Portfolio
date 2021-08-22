@@ -132,7 +132,7 @@ function addElement() {
     modal.style.display = 'none';
   });
 
-  const mainContainer = document.querySelector('.mainContainer');
+  const mainContainer = document.querySelector('.main-container');
 
   closeBtn.addEventListener('click', () => {
     mainContainer.style.filter = 'blur(0px)';
