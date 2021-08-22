@@ -172,12 +172,12 @@
       <form id="signup" class="flex" action="https://formspree.io/f/mayajwdo" method="POST">
         <fieldset>
           <label for="name"></label>
-          <input type="text" name="name" id="name" placeholder="Text input" minlength="5" maxlength="30" required />
+          <input type="text" name="name" id="name" placeholder="Text input" minlength="5" maxlength="30"/>
 
           <label for="email"></label>
           <input type="email" name="email" id="email" placeholder="Email address"/>
 
-          <textarea name="user-message" placeholder="Enter text here" minlength="3" maxlength="500" required></textarea>
+          <textarea name="user-message" placeholder="Enter text here" minlength="3" maxlength="500"></textarea>
         </fieldset>
           
         <label class="labelformat" for="btnInsert"></label>
@@ -215,7 +215,12 @@
       </div>
     </footer>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
+  <script src="./modules/menuWindow.js"></script>
+  <script src="./modules/topFunction.js"></script>
+  <script src="./modules/localStorage.js"></script>
+  <script src="./modules/clientValidation.js"></script>
+  <script src="./modules/popUp.js" type="module"></script>
 </body>
 
 </html>
