@@ -1,4 +1,4 @@
-import projects from "./projectsInfo.js";
+import projects from './projectsInfo.js';
 
 const allProjects = projects;
 // Create a div to open the window into the div.

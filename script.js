@@ -1,5 +1,5 @@
-import projects from "../modules/projectsInfo.js";
-import addElement from "./modules/popUp.js";
+import projects from './modules/projectsInfo.js';
+import addElement from './modules/popUp.js';
 // First, from where our work section will be located?
 // We need a id for reference our JS section.
 const works = document.querySelector('.works');

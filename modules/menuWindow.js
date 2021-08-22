@@ -8,5 +8,5 @@ function closeMenu() {
   menu.style.visibility = 'hidden';
 }
 
-openMenu()
-closeMenu()
+openMenu();
+closeMenu();
