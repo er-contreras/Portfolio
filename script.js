@@ -2,7 +2,8 @@ import projects from './modules/projectsInfo.js';
 import addElement from './modules/popUp.js';
 // First, from where our work section will be located?
 // We need a id for reference our JS section.
-const works = document.querySelector('.works');
+// const works = document.querySelector('.works');
+const main = document.querySelector('#main');
 
 for (let i = 0; i < projects.length; i += 1) {
   // Work Section 1
@@ -27,9 +28,10 @@ for (let i = 0; i < projects.length; i += 1) {
     divWorkSpace.classList.add('work-space-1');
   }
 
-  works.appendChild(divWorkSpace);
+  main.appendChild(divWorkSpace);
 
   divWhiteScreenLeft.classList.add('white-screen');
+  divWhiteScreenLeft.src = 'todo-list.png';
   divWorkSpace.appendChild(divWhiteScreenLeft);
 
   section.classList.add('work-section-description');
@@ -80,7 +82,7 @@ for (let i = 0; i < projects.length; i += 1) {
   
   // After clicking in the button the window popup to show your project deatails.
   btn.addEventListener('click', () => {
-    addElement();
+    addElement(projects);
     mainContainer.style.filter = 'blur(20px)';
   });
 }

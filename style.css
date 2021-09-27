@@ -51,15 +51,15 @@ body {
 }
 
 .background-top {
-  background-image: url(./BG/top-circles-mobile.png);
+  /* background-image: url(./BG/top-circles-mobile.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
 }
 
 .background-bottom {
-  background-image: url(./BG/background-bottom-mobile.png);
+  /* background-image: url(./BG/background-bottom-mobile.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
 }
 
 .menu-dropdown div {
@@ -249,16 +249,21 @@ main h2 {
   text-align: center;
 }
 
-.work-section-container {
-  display: grid;
+#main {
+  display: flex;
+  flex-direction: column;
 }
 
 .works {
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
-.work-space-1 {
+.work-space-1,
+.work-space-2 {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .white-screen {
@@ -678,15 +683,15 @@ form input.success {
   }
 
   .background-bottom {
-    background: url(./BG/bottom-section-desktop.png);
+    /* background: url(./BG/bottom-section-desktop.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
   }
 
   .background-top {
-    background: url(./BG/top-section-desktop.png);
+    /* background: url(./BG/top-section-desktop.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
   }
 
   /* Modal popup Window */
