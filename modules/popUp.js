@@ -1,8 +1,8 @@
-import projects from './projectsInfo.js';
+// import projects from './projectsInfo.js';
 
-const allProjects = projects;
+// const allProjects = projects;
 // Create a div to open the window into the div.
-function addElement() {
+function addElement(allProjects) {
   const modal = document.createElement('div');
   const divHeader = document.createElement('div');
   const header = document.createElement('h1');
@@ -26,6 +26,8 @@ function addElement() {
   const tech4 = document.createElement('p');
   const verticalLine5 = document.createElement('div');
 
+  // for (let i = 0; i < allProjects.length; i += 1) {
+  console.log(allProjects[0].name);
   modal.className = 'divClass';
   document.body.appendChild(modal);
 
@@ -35,6 +37,7 @@ function addElement() {
 
   header.className = 'h1Class';
   header.textContent = `${allProjects[0].name}`;
+  // header.textContent = `${'Hello there!'}`;
   divHeader.appendChild(header);
 
   closeBtn.classList.add('divBtnClass');
@@ -46,7 +49,7 @@ function addElement() {
   img.src = `${allProjects[0].image}`;
 
   if (window.matchMedia('(min-width: 1000px)').matches) {
-    img.src = './BG/Snapshoot-Portfolio-desktop.png';
+    img.src = 'todo-list.png';
   }
 
   img.alt = 'snapshoot-portfolio';
@@ -139,5 +142,6 @@ function addElement() {
     hide();
   });
 }
+// }
 
 export default addElement;

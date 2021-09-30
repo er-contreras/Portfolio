@@ -2,7 +2,8 @@ import projects from './modules/projectsInfo.js';
 import addElement from './modules/popUp.js';
 // First, from where our work section will be located?
 // We need a id for reference our JS section.
-const works = document.querySelector('.works');
+// const works = document.querySelector('.works');
+const main = document.querySelector('#main');
 
 for (let i = 0; i < projects.length; i += 1) {
   // Work Section 1
@@ -27,9 +28,10 @@ for (let i = 0; i < projects.length; i += 1) {
     divWorkSpace.classList.add('work-space-1');
   }
 
-  works.appendChild(divWorkSpace);
+  main.appendChild(divWorkSpace);
 
   divWhiteScreenLeft.classList.add('white-screen');
+  divWhiteScreenLeft.src = 'todo-list.png';
   divWorkSpace.appendChild(divWhiteScreenLeft);
 
   section.classList.add('work-section-description');
@@ -69,36 +71,18 @@ for (let i = 0; i < projects.length; i += 1) {
   buttonWorkSection.textContent = 'See Project';
   buttonWorkSection.setAttribute('type', 'button');
   buttonWorkSection.setAttribute('onclick', 'topFunction()');
-  buttonWorkSection.classList.add('btn-transition', `openWindow${i}`);
+  buttonWorkSection.classList.add('btn-transition', `open-window-${i}`);
   buttonWorkSection.id = 'myBtn';
   section.appendChild(buttonWorkSection);
+
+  /* Array with projects details. POPUP Window */
+  // Bounce the button of see project with the window you going to generate with javascript.
+  const btn = document.querySelector(`.open-window-${i}`);
+  const mainContainer = document.querySelector('.main-container');
+
+  // After clicking in the button the window popup to show your project deatails.
+  btn.addEventListener('click', () => {
+    addElement(projects);
+    mainContainer.style.filter = 'blur(20px)';
+  });
 }
-
-/* Array with projects details. POPUP Window */
-// Bounce the button of see project with the window you going to generate with javascript.
-const btn = document.querySelector('.openWindow0');
-const btn2 = document.querySelector('.openWindow1');
-const btn3 = document.querySelector('.openWindow2');
-const btn4 = document.querySelector('.openWindow3');
-const mainContainer = document.querySelector('.main-container');
-
-// After clicking in the button the window popup to show your project deatails.
-btn.addEventListener('click', () => {
-  addElement();
-  mainContainer.style.filter = 'blur(20px)';
-});
-
-btn2.addEventListener('click', () => {
-  addElement();
-  mainContainer.style.filter = 'blur(20px)';
-});
-
-btn3.addEventListener('click', () => {
-  addElement();
-  mainContainer.style.filter = 'blur(20px)';
-});
-
-btn4.addEventListener('click', () => {
-  addElement();
-  mainContainer.style.filter = 'blur(20px)';
-});

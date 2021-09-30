@@ -45,21 +45,21 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url(/BG/shapes-mobile-menu.png);
+  background-image: url(/Background/shapes-mobile-menu.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .background-top {
-  background-image: url(./BG/top-circles-mobile.png);
+  /* background-image: url(./BG/top-circles-mobile.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
 }
 
 .background-bottom {
-  background-image: url(./BG/background-bottom-mobile.png);
+  /* background-image: url(./BG/background-bottom-mobile.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
 }
 
 .menu-dropdown div {
@@ -249,16 +249,17 @@ main h2 {
   text-align: center;
 }
 
-.work-section-container {
-  display: grid;
-}
-
-.works {
+#main {
+  display: flex;
   flex-direction: column;
 }
 
-.work-space-1 {
+.work-space-1,
+.work-space-2 {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .white-screen {
@@ -555,232 +556,12 @@ form input.success {
 
 @media screen and (max-width: 1000px) {
   .menu-dropdown {
-    background-image: url(./BG/background-bottom-mobile.png);
+    background-image: url(./Background/background-bottom-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .vertical-lines-desktop {
     display: none;
-  }
-}
-
-/* Media Querie */
-@media screen and (min-width: 1000px) {
-  .hamburger-button {
-    display: none;
-  }
-
-  .header {
-    width: 40rem;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-
-  .header h1 {
-    font-size: 4rem;
-  }
-
-  .links {
-    margin-bottom: 3rem;
-  }
-
-  .division {
-    width: 40rem;
-    margin: 0 auto;
-  }
-
-  .icons-arrows {
-    flex-direction: row;
-    margin: 3rem 20rem;
-  }
-
-  .arrow-1 img,
-  .arrow-2 img {
-    margin-top: 5rem;
-  }
-
-  .p {
-    margin: 15rem 10rem 3rem;
-    width: auto;
-  }
-
-  main {
-    margin-top: 3rem;
-  }
-
-  .work-space-1 {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .work-space-2 {
-    display: inline-flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .white-screen {
-    margin: 2rem;
-    width: 384px;
-    height: 248px;
-  }
-
-  .work-section-description {
-    width: 40rem;
-  }
-
-  .contact-us {
-    display: none;
-  }
-
-  .lets-chat-section {
-    margin: 0 auto;
-  }
-
-  .footer-p {
-    margin: 0 20rem;
-  }
-
-  fieldset input {
-    width: 63rem;
-    height: 40px;
-  }
-
-  fieldset textarea {
-    width: 63rem;
-    height: 20rem;
-  }
-
-  .icons-and-email {
-    flex-direction: row;
-    justify-content: center;
-    margin: 3rem;
-  }
-
-  .icons-footer {
-    margin: 2rem;
-  }
-
-  .link-email {
-    margin-top: 2rem;
-  }
-
-  nav {
-    margin-top: 1rem;
-  }
-
-  .nav-ul-img img {
-    width: 3rem;
-  }
-
-  .background-bottom {
-    background: url(./BG/bottom-section-desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .background-top {
-    background: url(./BG/top-section-desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  /* Modal popup Window */
-  .divClass {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.196);
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    height: 90vh;
-  }
-
-  .divHeader {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  .h1Class {
-    color: white;
-    font-size: 40px;
-    font-family: "Roboto", sans-serif;
-  }
-
-  .imgClass {
-    width: 40%;
-    height: 30%;
-  }
-
-  .pClass {
-    font-family: "Roboto", sans-serif;
-    width: 80%;
-    margin: 20px auto;
-    color: #ffff;
-    padding: 5px;
-  }
-
-  .vertical-lines-modal {
-    display: flex;
-    justify-content: space-around;
-    color: #ffff;
-    font-family: "Poppins", sans-serif;
-    margin: 0 auto;
-    width: 304px;
-    height: 41px;
-  }
-
-  .vertical-line-modal {
-    border-left: 1.5px solid #81818c;
-    height: 30px;
-  }
-
-  .techs {
-    display: flex;
-    align-items: center;
-  }
-
-  .divBtns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 300px;
-    height: 48px;
-    align-items: center;
-    margin: 10px auto;
-  }
-
-  .newBtn {
-    width: 108px;
-    height: 48px;
-    background-color: #7d73fc;
-    border: none;
-    color: #ffff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .newBtn2 {
-    margin-top: 0;
-  }
-
-  .divBtnClass {
-    margin-top: 19px;
-    width: 24px;
-    height: 24px;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    color: #ffff;
   }
 }
