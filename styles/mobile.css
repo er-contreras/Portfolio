@@ -45,7 +45,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url(/BG/shapes-mobile-menu.png);
+  background-image: url(/Background/shapes-mobile-menu.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -556,7 +556,7 @@ form input.success {
 
 @media screen and (max-width: 1000px) {
   .menu-dropdown {
-    background-image: url(./BG/background-bottom-mobile.png);
+    background-image: url(./Background/background-bottom-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -565,5 +565,3 @@ form input.success {
     display: none;
   }
 }
-
-

@@ -79,11 +79,10 @@ for (let i = 0; i < projects.length; i += 1) {
   // Bounce the button of see project with the window you going to generate with javascript.
   const btn = document.querySelector(`.open-window-${i}`);
   const mainContainer = document.querySelector('.main-container');
-  
+
   // After clicking in the button the window popup to show your project deatails.
   btn.addEventListener('click', () => {
     addElement(projects);
     mainContainer.style.filter = 'blur(20px)';
   });
 }
-
