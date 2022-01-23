@@ -27,7 +27,7 @@ function addElement(allProjects) {
   const verticalLine5 = document.createElement('div');
 
   // for (let i = 0; i < allProjects.length; i += 1) {
-  console.log(allProjects[0].name);
+  // console.log(allProjects[0].name);
   modal.className = 'divClass';
   document.body.appendChild(modal);
 
