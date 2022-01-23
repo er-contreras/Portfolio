@@ -13,6 +13,13 @@ body {
   min-height: 100vh;
 }
 
+#about {
+  background-image: url('../background/two-circles-header.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .main-container {
   background-color: #13114f;
 }
@@ -23,9 +30,9 @@ body {
 
 .nav-top {
   justify-content: space-between;
+  align-items: center;
   color: white;
   margin: 1rem;
-  margin-top: 2rem;
 }
 
 .hamburger-button {
@@ -50,18 +57,6 @@ body {
   background-size: cover;
 }
 
-.background-top {
-  /* background-image: url(./BG/top-circles-mobile.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%; */
-}
-
-.background-bottom {
-  /* background-image: url(./BG/background-bottom-mobile.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%; */
-}
-
 .menu-dropdown div {
   width: 90%;
   justify-content: flex-end;
@@ -73,7 +68,6 @@ ul {
 }
 
 div ul {
-  margin-top: 1rem;
   color: rgb(216, 216, 216);
 }
 
@@ -102,7 +96,6 @@ h1 {
   color: #9390ff;
   text-align: center;
   font-size: 3rem;
-  margin-top: 1rem;
 }
 
 nav h1 {
@@ -111,6 +104,10 @@ nav h1 {
   font-size: 2rem;
   font-weight: lighter;
   padding: 0.5rem;
+}
+
+.nav-ul {
+  align-items: center;
 }
 
 .nav-ul li {
@@ -126,10 +123,6 @@ a {
   text-decoration: none;
   color: white;
 }
-
-/* .hamburger-button:hover {
-  background: blueviolet;
-} */
 
 section h2 {
   text-align: center;
@@ -252,6 +245,10 @@ main h2 {
 #main {
   display: flex;
   flex-direction: column;
+  background-image: url('../background/group-65.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .work-space-1,
@@ -398,10 +395,6 @@ fieldset textarea {
   transform: rotate(360deg);
 }
 
-/* .h1-animation {
-  animation: 3s 1 alternate slidein1;
-} */
-
 @keyframes slidein1 {
   0% {
     margin-left: 100%;
@@ -413,10 +406,6 @@ fieldset textarea {
     width: 100%;
   }
 }
-
-/* .h2-animation {
-  animation: 3s 1 alternate slidein;
-} */
 
 @keyframes slidein {
   0% {

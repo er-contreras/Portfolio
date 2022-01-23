@@ -110,18 +110,6 @@
     width: 3rem;
   }
 
-  .background-bottom {
-    /* background: url(./BG/bottom-section-desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
-  }
-
-  .background-top {
-    /* background: url(./BG/top-section-desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
-  }
-
   /* Modal popup Window */
   .divClass {
     position: fixed;
@@ -131,9 +119,6 @@
     background-color: rgba(255, 255, 255, 0.196);
     display: flex;
     flex-direction: column;
-
-    /* width: 90vw;
-    height: 90vh; */
   }
 
   .divHeader {
@@ -149,11 +134,6 @@
     color: white;
     font-size: 40px;
     font-family: "Roboto", sans-serif;
-  }
-
-  .imgClass {
-    /* width: 40%;
-    height: 30%; */
   }
 
   .pClass {

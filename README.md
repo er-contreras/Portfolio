@@ -1,15 +1,11 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio-setup-and-mobile-version-skeleton
+# Portfolio
 
 > This is about using figma to built our mobile project.
 
-<div align="center"><img src="./SS/app-screenshot.png" width="300"/></div>
-<div align="center"><img src="./SS/about-screenshot.png" width="300"/></div>
-<div align="center"><img src="./SS/icons-screenshot.png" width="300"/></div>
-<div align="center"><img src="./SS/work-section.png" width="300"/></div>
-<div align="center"><img src="./SS/formscreenshot.png" width="300"/></div>
+<!-- <div align="center"><img src="./SS/app-screenshot.png" width="300"/></div> -->
 
 Mobile ScreenShots
 
