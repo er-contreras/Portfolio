@@ -1,18 +1,20 @@
 import projects from './modules/projectsInfo.js';
 import addElement from './modules/popUp.js';
 // First, from where our work section will be located?
-// We need a id for reference our JS section.
+// We need an id for reference our JS section.
 // const works = document.querySelector('.works');
 const main = document.querySelector('#main');
 
 for (let i = 0; i < projects.length; i += 1) {
   // Work Section 1
   const divWorkSpace = document.createElement('div');
-  const divWhiteScreenLeft = document.createElement('div');
+  const divWhiteScreenLeft = document.createElement('img');
   const section = document.createElement('section');
   const header = document.createElement('h2');
   const paragraph = document.createElement('p');
   const divVerticalLines = document.createElement('div');
+  // const paragraphVerticalLines = document.createElement('p');
+  // const divVerticalLine = document.createElement('div');
   const paragraphVerticalLines1 = document.createElement('p');
   const divVerticalLine1 = document.createElement('div');
   const paragraphVerticalLines2 = document.createElement('p');
@@ -31,7 +33,7 @@ for (let i = 0; i < projects.length; i += 1) {
   main.appendChild(divWorkSpace);
 
   divWhiteScreenLeft.classList.add('white-screen');
-  divWhiteScreenLeft.src = 'todo-list.png';
+  divWhiteScreenLeft.src = `${projects[i].image}`;
   divWorkSpace.appendChild(divWhiteScreenLeft);
 
   section.classList.add('work-section-description');
@@ -46,6 +48,12 @@ for (let i = 0; i < projects.length; i += 1) {
 
   divVerticalLines.classList.add('vertical-lines', 'flex');
   section.appendChild(divVerticalLines);
+
+  // paragraphVerticalLines.textContent = `${projects[i].technologies}`;
+  // divVerticalLines.appendChild(paragraphVerticalLines);
+
+  // divVerticalLine.classList.add('vertical-line');
+  // divVerticalLines.appendChild(divVerticalLine);
 
   paragraphVerticalLines1.textContent = 'css';
   divVerticalLines.appendChild(paragraphVerticalLines1);
@@ -82,7 +90,7 @@ for (let i = 0; i < projects.length; i += 1) {
 
   // After clicking in the button the window popup to show your project deatails.
   btn.addEventListener('click', () => {
-    addElement(projects);
+    addElement(projects[i].id);
     mainContainer.style.filter = 'blur(20px)';
   });
 }

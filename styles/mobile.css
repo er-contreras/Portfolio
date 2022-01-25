@@ -52,7 +52,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url(/Background/shapes-mobile-menu.png);
+  /* background-image: url(/Background/shapes-mobile-menu.png); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -245,10 +245,10 @@ main h2 {
 #main {
   display: flex;
   flex-direction: column;
-  background-image: url('../background/group-65.svg');
+  /* background-image: url('../background/group-65.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 
 .work-space-1,
@@ -262,7 +262,6 @@ main h2 {
 .white-screen {
   width: 327px;
   height: 236px;
-  background-color: rgb(255, 255, 255);
   margin: 48px 24px 24px;
 }
 

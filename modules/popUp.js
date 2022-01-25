@@ -1,8 +1,8 @@
-// import projects from './projectsInfo.js';
+import projects from './projectsInfo.js';
 
-// const allProjects = projects;
+// const projects = projects;
 // Create a div to open the window into the div.
-function addElement(allProjects) {
+function addElement(id) {
   const modal = document.createElement('div');
   const divHeader = document.createElement('div');
   const header = document.createElement('h1');
@@ -20,14 +20,14 @@ function addElement(allProjects) {
   const newBtn = document.createElement('button');
   const newBtnAnchor = document.createElement('a');
   const newBtn2 = document.createElement('button');
+  const newBtn2Anchor = document.createElement('a');
   const divBtns = document.createElement('div');
   const imgBtn1 = document.createElement('img');
   const imgBtn2 = document.createElement('img');
   const tech4 = document.createElement('p');
   const verticalLine5 = document.createElement('div');
 
-  // for (let i = 0; i < allProjects.length; i += 1) {
-  // console.log(allProjects[0].name);
+  // console.log(projects[0].name);
   modal.className = 'divClass';
   document.body.appendChild(modal);
 
@@ -36,8 +36,7 @@ function addElement(allProjects) {
   modal.appendChild(divHeader);
 
   header.className = 'h1Class';
-  header.textContent = `${allProjects[0].name}`;
-  // header.textContent = `${'Hello there!'}`;
+
   divHeader.appendChild(header);
 
   closeBtn.classList.add('divBtnClass');
@@ -46,25 +45,16 @@ function addElement(allProjects) {
 
   // Image
   img.className = 'imgClass';
-  img.src = `${allProjects[0].image}`;
 
-  if (window.matchMedia('(min-width: 1000px)').matches) {
-    img.src = 'todo-list.png';
-  }
+  // if (window.matchMedia('(min-width: 1000px)').matches) {
+  //   img.src = 'todo-list.png';
+  // }
 
   img.alt = 'snapshoot-portfolio';
   modal.appendChild(img);
 
   // Description
   textDescription.className = 'pClass';
-
-  if (window.matchMedia('(min-width: 1000px)').matches) {
-    textDescription.textContent = `${allProjects[0].descriptionDesktopPopUp}`;
-  }
-
-  if (window.matchMedia('(max-width: 999px)').matches) {
-    textDescription.textContent = `${allProjects[0].descriptionMobilePopup}`;
-  }
 
   modal.appendChild(textDescription);
 
@@ -95,17 +85,13 @@ function addElement(allProjects) {
   technologiesContainer.appendChild(tech3);
   technologiesContainer.appendChild(verticalLine4);
 
-  tech1.textContent = `${allProjects[0].technologies[0]}`;
-  tech2.textContent = `${allProjects[0].technologies[1]}`;
-  tech3.textContent = `${allProjects[0].technologies[2]}`;
-
-  if (window.matchMedia('(min-width: 1000px)').matches) {
-    tech4.classList.add('techs');
-    verticalLine5.classList.add('vertical-line-modal');
-    technologiesContainer.appendChild(tech4);
-    technologiesContainer.appendChild(verticalLine5);
-    tech4.textContent = 'Github';
-  }
+  // if (window.matchMedia('(min-width: 1000px)').matches) {
+  //   tech4.classList.add('techs');
+  //   verticalLine5.classList.add('vertical-line-modal');
+  //   technologiesContainer.appendChild(tech4);
+  //   technologiesContainer.appendChild(verticalLine5);
+  //   tech4.textContent = 'Github';
+  // }
 
   // Buttons
   divBtns.className = 'divBtns';
@@ -113,12 +99,15 @@ function addElement(allProjects) {
 
   newBtn.className = 'newBtn';
   newBtn.textContent = 'See Live';
-  newBtn.appendChild(newBtnAnchor);
-  divBtns.appendChild(newBtn);
+  newBtnAnchor.appendChild(newBtn);
+  newBtnAnchor.setAttribute('target', '_blank');
+  divBtns.appendChild(newBtnAnchor);
 
   newBtn2.className = 'newBtn2';
   newBtn2.textContent = 'See Source';
-  divBtns.appendChild(newBtn2);
+  newBtn2Anchor.appendChild(newBtn2);
+  newBtn2Anchor.setAttribute('target', '_blank');
+  divBtns.appendChild(newBtn2Anchor);
 
   imgBtn1.className = 'imgClassBtn';
   imgBtn1.src = './icons/Icon-btn.png';
@@ -129,6 +118,28 @@ function addElement(allProjects) {
   imgBtn2.src = './icons/github.png';
   imgBtn2.alt = 'github-icon';
   newBtn2.appendChild(imgBtn2);
+
+  for (let i = 0; i < projects.length; i += 1) {
+    if (projects[i].id === id) {
+      header.textContent = `${projects[i].name}`;
+      img.src = `${projects[i].image}`;
+
+      tech1.textContent = `${projects[i].technologies[i]}`;
+      // tech2.textContent = `${projects[i].technologies[i]}`;
+      // tech3.textContent = `${projects[i].technologies[i]}`;
+
+      if (window.matchMedia('(min-width: 1000px)').matches) {
+        textDescription.textContent = `${projects[i].descriptionDesktopPopUp}`;
+      }
+
+      if (window.matchMedia('(max-width: 999px)').matches) {
+        textDescription.textContent = `${projects[i].descriptionMobilePopup}`;
+      }
+
+      newBtnAnchor.setAttribute('href', `${projects[i].demoLive}`);
+      newBtn2Anchor.setAttribute('href', `${projects[i].link}`);
+    }
+  }
 
   // Hide an element
   const hide = (() => {
