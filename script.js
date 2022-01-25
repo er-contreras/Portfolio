@@ -40,12 +40,16 @@ for (let i = 0; i < projects.length; i += 1) {
   divVerticalLines.classList.add('vertical-lines', 'flex');
   section.appendChild(divVerticalLines);
 
-  for (let j = 0; j < projects[i].technologies.length; j += 1) {
+  for (let j = 0; j < projects[i].technologies.length + 1; j += 1) {
     const divVerticalLine = document.createElement('div');
     divVerticalLine.classList.add('vertical-line');
     
     const paragraphVerticalLines = document.createElement('p');
     paragraphVerticalLines.textContent = `${projects[i].technologies[j]}`;
+
+    if (paragraphVerticalLines.innerHTML === 'undefined') {
+      paragraphVerticalLines.innerHTML = '';
+    }
 
     divVerticalLines.appendChild(divVerticalLine);
     divVerticalLines.appendChild(paragraphVerticalLines);
