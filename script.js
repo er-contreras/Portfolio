@@ -43,7 +43,7 @@ for (let i = 0; i < projects.length; i += 1) {
   for (let j = 0; j < projects[i].technologies.length + 1; j += 1) {
     const divVerticalLine = document.createElement('div');
     divVerticalLine.classList.add('vertical-line');
-    
+
     const paragraphVerticalLines = document.createElement('p');
     paragraphVerticalLines.textContent = `${projects[i].technologies[j]}`;
 

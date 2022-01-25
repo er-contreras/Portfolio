@@ -3,16 +3,13 @@
 
 # Portfolio
 
-> This is about using figma to built our mobile project.
+> Come through to my personal pertfolio, check my projects and send an email to contact me.
 
 <!-- <div align="center"><img src="./SS/app-screenshot.png" width="300"/></div> -->
 
-Mobile ScreenShots
-
 ## Link of Web Page
 
-- GitHub Pages: [@eri8-9](https://eri8-9.github.io/Portfolio-setup-and-mobile-version-skeleton/
-)
+- GitHub Pages: [@eri8-9](https://eri8-9.github.io/Portfolio/)
 
 ## Built With
 
@@ -23,17 +20,6 @@ Mobile ScreenShots
   - Systematic
   - Creative
   - Persistent
-
-## Getting Started
-
-### Prerequisites
-  - You should have VS Code installed or have the source-code editor of your preference.
-### Setup
-  - Paste the link of the repo (you can find it in the tab "Code").
-### Install
-  - Use terminal to install it. You can use git clone follow by link of the repo.
-### Usage
-  - Create a branch to make improvements in the project.
 
 ## Authors
 

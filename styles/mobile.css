@@ -427,7 +427,8 @@ fieldset textarea {
   display: flex;
   flex-direction: column;
   width: 90vw;
-  height: 95vh;
+  height: 65vh;
+  justify-content: center;
 }
 
 .h1Class {
@@ -515,7 +516,14 @@ fieldset textarea {
   height: 24px;
   background-color: rgba(255, 255, 255, 0);
   border: none;
-  color: #ffff;
+  color: rgb(106, 106, 106);
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.newBtn,
+.newBtn2 {
+  cursor: pointer;
 }
 
 /* Form cSs */
@@ -550,5 +558,9 @@ form input.success {
 
   .vertical-lines-desktop {
     display: none;
+  }
+
+  .divClass {
+    min-height: 90vh;
   }
 }
