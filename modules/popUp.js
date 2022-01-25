@@ -80,13 +80,17 @@ function addElement(id) {
       header.textContent = `${projects[i].name}`;
       img.src = `${projects[i].image}`;
 
-      for (let j = 0; j < projects[i].technologies.length; j += 1) {
+      for (let j = 0; j < projects[i].technologies.length + 1; j += 1) {
         const verticalLine = document.createElement('div');
         verticalLine.classList.add('vertical-line-modal');
 
         const tech = document.createElement('p');
         tech.classList.add('techs');
         tech.textContent = `${projects[i].technologies[j]}`;
+
+        if (tech.innerHTML === 'undefined') {
+          tech.innerHTML = '';
+        }
 
         technologiesContainer.appendChild(verticalLine);
         technologiesContainer.appendChild(tech);

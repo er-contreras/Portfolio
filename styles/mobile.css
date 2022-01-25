@@ -13,6 +13,10 @@ body {
   min-height: 100vh;
 }
 
+#myBtn {
+  cursor: pointer;
+}
+
 #about {
   background-image: url('../background/two-circles-header.svg');
   background-size: contain;
@@ -39,6 +43,7 @@ body {
   background-color: transparent;
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .menu-dropdown {
@@ -52,9 +57,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /* background-image: url(/Background/shapes-mobile-menu.png); */
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .menu-dropdown div {
@@ -245,10 +247,6 @@ main h2 {
 #main {
   display: flex;
   flex-direction: column;
-  /* background-image: url('../background/group-65.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 
 .work-space-1,
@@ -350,6 +348,7 @@ fieldset textarea {
   font-family: "Roboto", sans-serif;
   border: 0;
   margin: 0 auto 6rem;
+  cursor: pointer;
 }
 
 .btn-center:hover {
