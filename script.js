@@ -13,15 +13,6 @@ for (let i = 0; i < projects.length; i += 1) {
   const header = document.createElement('h2');
   const paragraph = document.createElement('p');
   const divVerticalLines = document.createElement('div');
-  // const paragraphVerticalLines = document.createElement('p');
-  // const divVerticalLine = document.createElement('div');
-  const paragraphVerticalLines1 = document.createElement('p');
-  const divVerticalLine1 = document.createElement('div');
-  const paragraphVerticalLines2 = document.createElement('p');
-  const divVerticalLine2 = document.createElement('div');
-  const paragraphVerticalLines3 = document.createElement('p');
-  const paragraphVerticalLines4 = document.createElement('p');
-  const divVerticalLine3 = document.createElement('div');
   const buttonWorkSection = document.createElement('button');
 
   if ((i + 1) % 2 === 0) {
@@ -49,32 +40,16 @@ for (let i = 0; i < projects.length; i += 1) {
   divVerticalLines.classList.add('vertical-lines', 'flex');
   section.appendChild(divVerticalLines);
 
-  // paragraphVerticalLines.textContent = `${projects[i].technologies}`;
-  // divVerticalLines.appendChild(paragraphVerticalLines);
+  for (let j = 0; j < projects[i].technologies.length; j += 1) {
+    const divVerticalLine = document.createElement('div');
+    divVerticalLine.classList.add('vertical-line');
+    
+    const paragraphVerticalLines = document.createElement('p');
+    paragraphVerticalLines.textContent = `${projects[i].technologies[j]}`;
 
-  // divVerticalLine.classList.add('vertical-line');
-  // divVerticalLines.appendChild(divVerticalLine);
-
-  paragraphVerticalLines1.textContent = 'css';
-  divVerticalLines.appendChild(paragraphVerticalLines1);
-
-  divVerticalLine1.classList.add('vertical-line');
-  divVerticalLines.appendChild(divVerticalLine1);
-
-  paragraphVerticalLines2.textContent = 'html';
-  divVerticalLines.appendChild(paragraphVerticalLines2);
-
-  divVerticalLine2.classList.add('vertical-line');
-  divVerticalLines.appendChild(divVerticalLine2);
-
-  paragraphVerticalLines3.textContent = 'bootstrap';
-  divVerticalLines.appendChild(paragraphVerticalLines3);
-
-  divVerticalLine3.classList.add('vertical-line');
-  divVerticalLines.appendChild(divVerticalLine3);
-
-  paragraphVerticalLines4.textContent = 'Ruby';
-  divVerticalLines.appendChild(paragraphVerticalLines4);
+    divVerticalLines.appendChild(divVerticalLine);
+    divVerticalLines.appendChild(paragraphVerticalLines);
+  }
 
   buttonWorkSection.textContent = 'See Project';
   buttonWorkSection.setAttribute('type', 'button');

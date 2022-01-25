@@ -1,6 +1,5 @@
 import projects from './projectsInfo.js';
 
-// const projects = projects;
 // Create a div to open the window into the div.
 function addElement(id) {
   const modal = document.createElement('div');
@@ -10,13 +9,7 @@ function addElement(id) {
   const img = document.createElement('img');
   const textDescription = document.createElement('p');
   const technologiesContainer = document.createElement('div');
-  const verticalLine1 = document.createElement('div');
-  const tech1 = document.createElement('p');
-  const verticalLine2 = document.createElement('div');
-  const tech2 = document.createElement('p');
-  const verticalLine3 = document.createElement('div');
-  const tech3 = document.createElement('p');
-  const verticalLine4 = document.createElement('div');
+
   const newBtn = document.createElement('button');
   const newBtnAnchor = document.createElement('a');
   const newBtn2 = document.createElement('button');
@@ -24,8 +17,6 @@ function addElement(id) {
   const divBtns = document.createElement('div');
   const imgBtn1 = document.createElement('img');
   const imgBtn2 = document.createElement('img');
-  const tech4 = document.createElement('p');
-  const verticalLine5 = document.createElement('div');
 
   // console.log(projects[0].name);
   modal.className = 'divClass';
@@ -46,11 +37,7 @@ function addElement(id) {
   // Image
   img.className = 'imgClass';
 
-  // if (window.matchMedia('(min-width: 1000px)').matches) {
-  //   img.src = 'todo-list.png';
-  // }
-
-  img.alt = 'snapshoot-portfolio';
+  img.alt = 'snapshot-portfolio';
   modal.appendChild(img);
 
   // Description
@@ -61,37 +48,6 @@ function addElement(id) {
   // Technologies
   technologiesContainer.classList.add('vertical-lines-modal');
   modal.appendChild(technologiesContainer);
-
-  verticalLine1.classList.add('vertical-line-modal');
-  technologiesContainer.appendChild(verticalLine1);
-
-  verticalLine2.classList.add('vertical-line-modal');
-  technologiesContainer.appendChild(verticalLine2);
-
-  verticalLine3.classList.add('vertical-line-modal');
-  technologiesContainer.appendChild(verticalLine3);
-
-  verticalLine4.classList.add('vertical-line-modal');
-  technologiesContainer.appendChild(verticalLine4);
-
-  tech1.classList.add('techs');
-  tech2.classList.add('techs');
-  tech3.classList.add('techs');
-
-  technologiesContainer.appendChild(tech1);
-  technologiesContainer.appendChild(verticalLine2);
-  technologiesContainer.appendChild(tech2);
-  technologiesContainer.appendChild(verticalLine3);
-  technologiesContainer.appendChild(tech3);
-  technologiesContainer.appendChild(verticalLine4);
-
-  // if (window.matchMedia('(min-width: 1000px)').matches) {
-  //   tech4.classList.add('techs');
-  //   verticalLine5.classList.add('vertical-line-modal');
-  //   technologiesContainer.appendChild(tech4);
-  //   technologiesContainer.appendChild(verticalLine5);
-  //   tech4.textContent = 'Github';
-  // }
 
   // Buttons
   divBtns.className = 'divBtns';
@@ -124,9 +80,17 @@ function addElement(id) {
       header.textContent = `${projects[i].name}`;
       img.src = `${projects[i].image}`;
 
-      tech1.textContent = `${projects[i].technologies[i]}`;
-      // tech2.textContent = `${projects[i].technologies[i]}`;
-      // tech3.textContent = `${projects[i].technologies[i]}`;
+      for (let j = 0; j < projects[i].technologies.length; j += 1) {
+        const verticalLine = document.createElement('div');
+        verticalLine.classList.add('vertical-line-modal');
+
+        const tech = document.createElement('p');
+        tech.classList.add('techs');
+        tech.textContent = `${projects[i].technologies[j]}`;
+
+        technologiesContainer.appendChild(verticalLine);
+        technologiesContainer.appendChild(tech);
+      }
 
       if (window.matchMedia('(min-width: 1000px)').matches) {
         textDescription.textContent = `${projects[i].descriptionDesktopPopUp}`;
@@ -153,6 +117,5 @@ function addElement(id) {
     hide();
   });
 }
-// }
 
 export default addElement;
