@@ -419,6 +419,7 @@ fieldset textarea {
   width: 90vw;
   height: 65vh;
   justify-content: center;
+  justify-content: space-around;
 }
 
 .h1Class {
@@ -454,7 +455,7 @@ fieldset textarea {
   justify-content: space-around;
   color: #ffff;
   font-family: "Poppins", sans-serif;
-  margin: 0 41px;
+  margin: 0 41px 0 80px;
 }
 
 .vertical-line-modal {
@@ -477,7 +478,7 @@ fieldset textarea {
 .newBtn {
   width: 108px;
   height: 48px;
-  background-color: #7d73fc;
+  background-color: #006878;
   border: none;
   color: #ffff;
   display: flex;
@@ -489,7 +490,7 @@ fieldset textarea {
   margin-top: 24px;
   width: 124px;
   height: 48px;
-  background-color: #7d73fc;
+  background-color: #006878;
   border: none;
   color: #ffff;
   display: flex;

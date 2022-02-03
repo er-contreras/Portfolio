@@ -119,7 +119,7 @@
     background-color: rgba(255, 255, 255, 0.196);
     display: flex;
     flex-direction: column;
-    min-height: 70vh;
+    min-height: 80vh;
   }
 
   .divHeader {
@@ -178,7 +178,7 @@
   .newBtn {
     width: 108px;
     height: 48px;
-    background-color: #7d73fc;
+    background-color: #006878;
     border: none;
     color: #ffff;
     display: flex;
