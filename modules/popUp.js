@@ -1,6 +1,5 @@
 import projects from './projectsInfo.js';
 
-// Create a div to open the window into the div.
 function addElement(id) {
   const modal = document.createElement('div');
   const divHeader = document.createElement('div');
@@ -18,11 +17,9 @@ function addElement(id) {
   const imgBtn1 = document.createElement('img');
   const imgBtn2 = document.createElement('img');
 
-  // console.log(projects[0].name);
   modal.className = 'divClass';
   document.body.appendChild(modal);
 
-  // Header and Close Btn
   divHeader.className = 'divHeader';
   modal.appendChild(divHeader);
 
@@ -34,22 +31,18 @@ function addElement(id) {
   closeBtn.textContent = 'X';
   divHeader.appendChild(closeBtn);
 
-  // Image
   img.className = 'imgClass';
 
   img.alt = 'snapshot-portfolio';
   modal.appendChild(img);
 
-  // Description
   textDescription.className = 'pClass';
 
   modal.appendChild(textDescription);
 
-  // Technologies
   technologiesContainer.classList.add('vertical-lines-modal');
   modal.appendChild(technologiesContainer);
 
-  // Buttons
   divBtns.className = 'divBtns';
   modal.appendChild(divBtns);
 
@@ -109,7 +102,6 @@ function addElement(id) {
     }
   }
 
-  // Hide an element
   const hide = (() => {
     modal.style.display = 'none';
   });

@@ -1,12 +1,9 @@
 import projects from './modules/projectsInfo.js';
 import addElement from './modules/popUp.js';
-// First, from where our work section will be located?
-// We need an id for reference our JS section.
-// const works = document.querySelector('.works');
+
 const main = document.querySelector('#main');
 
 for (let i = 0; i < projects.length; i += 1) {
-  // Work Section 1
   const divWorkSpace = document.createElement('div');
   const divWhiteScreenLeft = document.createElement('img');
   const section = document.createElement('section');
@@ -62,12 +59,9 @@ for (let i = 0; i < projects.length; i += 1) {
   buttonWorkSection.id = 'myBtn';
   section.appendChild(buttonWorkSection);
 
-  /* Array with projects details. POPUP Window */
-  // Bounce the button of see project with the window you going to generate with javascript.
   const btn = document.querySelector(`.open-window-${i}`);
   const mainContainer = document.querySelector('.main-container');
 
-  // After clicking in the button the window popup to show your project deatails.
   btn.addEventListener('click', () => {
     addElement(projects[i].id);
     mainContainer.style.filter = 'blur(20px)';

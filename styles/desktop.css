@@ -1,4 +1,3 @@
-/* Media Querie */
 @media screen and (min-width: 1000px) {
   .hamburger-button {
     display: none;
@@ -110,7 +109,6 @@
     width: 3rem;
   }
 
-  /* Modal popup Window */
   .divClass {
     position: fixed;
     top: 50%;

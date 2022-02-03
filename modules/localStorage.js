@@ -1,4 +1,3 @@
-/* Local Storage */
 const localStorageName = document.getElementById('name');
 const localStorageEmail = document.getElementById('email');
 const localStoragebtnInsert = document.getElementById('btnInsert');

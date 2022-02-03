@@ -1,4 +1,3 @@
-// Data of the projects section.
 const projects = [
   {
     id: 1,
