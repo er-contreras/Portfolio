@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  background: #13114f;
+  /* background: #13114f; */
+  background-color: #000000;
   min-height: 100vh;
 }
 
@@ -22,10 +23,12 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 13rem;
 }
 
 .main-container {
-  background-color: #13114f;
+  /* background-color: #13114f; */
+  /* background-color: #000000; */
 }
 
 .flex {
@@ -53,7 +56,8 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: #191765;
+  /* background-color: #191765; */
+  background-color: #000000;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -80,6 +84,7 @@ div ul {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 32px;
+  margin: 10rem 0;
 }
 
 .menu-dropdown li {
@@ -90,12 +95,12 @@ div ul {
 }
 
 .menu-dropdown li i {
-  color: #7d73fc;
+  color: #ffffff;
 }
 
 h1 {
   padding: 1rem;
-  color: #9390ff;
+  color: #006878;
   text-align: center;
   font-size: 3rem;
 }
@@ -191,7 +196,7 @@ hr {
 
 div h3 {
   font-size: 1.1rem;
-  color: rgb(148, 138, 255);
+  color: #006878;
 }
 
 /* About Section Start */
@@ -214,7 +219,7 @@ div h3 {
   font-size: 4rem;
   width: 300px;
   margin: 6rem 0 3rem 2rem;
-  color: rgb(148, 138, 255);
+  color: #006878;
   font-family: "Roboto", sans-serif;
 }
 
@@ -222,20 +227,12 @@ div h3 {
 main button {
   width: 89px;
   height: 48px;
-  background: #7d73fc;
+  background: #006878;
   color: #edecff;
   font-family: "Roboto", sans-serif;
   margin-left: 40px;
   border: 0;
-}
-
-main button:hover {
-  box-shadow: 0 10px 15px rgba(137, 68, 249, 0.454);
-}
-
-main button:active {
-  background-color: rgb(102, 20, 196);
-  box-shadow: none;
+  border-radius: 2rem;
 }
 
 main h2 {
@@ -258,7 +255,8 @@ main h2 {
 }
 
 .white-screen {
-  width: 327px;
+  /* width: 327px; */
+  max-width: 100%;
   height: 236px;
   margin: 48px 24px 24px;
 }
@@ -296,7 +294,7 @@ main h2 {
 }
 
 .contact-us {
-  color: #9390ff;
+  color: #006878;
   margin: 1rem 1rem 2.5rem 1rem;
   margin-top: 6rem;
   font-size: 3rem;
@@ -342,22 +340,14 @@ fieldset textarea {
 .btn-center {
   width: 9rem;
   height: 4.5rem;
-  background: #9390ff;
+  background: #006878;
   color: rgb(210, 210, 210);
   font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
   border: 0;
   margin: 0 auto 6rem;
   cursor: pointer;
-}
-
-.btn-center:hover {
-  box-shadow: 0 10px 15px rgba(137, 68, 249, 0.454);
-}
-
-.btn-center:active {
-  background-color: rgb(102, 20, 196);
-  box-shadow: none;
+  border-radius: 2rem;
 }
 
 .icons-footer {
@@ -377,7 +367,7 @@ fieldset textarea {
 }
 
 .lets-chat {
-  color: #9390ff;
+  color: #006878;
   margin: 1rem 1rem 2.5rem 1rem;
   margin-top: 6rem;
   font-size: 3rem;
@@ -441,6 +431,12 @@ fieldset textarea {
   margin: 0 auto;
   width: auto;
   height: 181px;
+}
+
+.close-btn {
+  background: none;
+  color: white;
+  border: none;
 }
 
 .pClass {
