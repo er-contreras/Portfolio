@@ -22,6 +22,28 @@ const projects = [
     link: 'https://github.com/eri8-9/air-pollution',
     demoLive: 'https://eri8-9.github.io/air-pollution/#/',
   },
+  {
+    id: 3,
+    name: 'Catalog Of My Things',
+    descriptionMobile: 'A simple application build with ruby where you can add books, movies, games, genres, labels, authors and sources.',
+    descriptionMobilePopup: 'A simple application build with ruby where you can add books, movies, games, genres, labels, authors and sources.',
+    descriptionDesktopPopUp: 'A simple application build with ruby where you can add books, movies, games, genres, labels, authors and sources. Everything works by the console in ruby.',
+    image: './catalog.png',
+    technologies: ['Ruby', 'Github'],
+    link: 'https://github.com/eri8-9/Catalog_of_my_things',
+    demoLive: 'https://github.com/eri8-9/Catalog_of_my_things',
+  },
+  {
+    id: 4,
+    name: 'Space Travelers',
+    descriptionMobile: 'App where you can find spaceships from space-x. You can reserve every spaceship and their missions',
+    descriptionMobilePopup: 'App where you can find spaceships from space-x. You can reserve every spaceship and their missions',
+    descriptionDesktopPopUp: 'App where you can find spaceships from space-x. You can reserve every spaceship and their missions. Once selected a mission or rocket you can see your reservations on a table.',
+    image: './space-travelers.png',
+    technologies: ['React & Redux', 'Github'],
+    link: 'https://github.com/eri8-9/Space-Travelers-Hub',
+    demoLive: 'https://github.com/eri8-9/Space-Travelers-Hub',
+  },
 ];
 
 export default projects;
