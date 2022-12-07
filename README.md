@@ -25,8 +25,8 @@
 
 👤 **Christian Erick Contreras**
 
-- GitHub: [@eri8-9](https://github.com/eri8-9)
-- Linkedin: [LinkedIn](https://www.linkedin.com/in/christian-erick/)
+- GitHub: [@eri8-9](https://github.com/er-contreras)
+- Linkedin: [LinkedIn](https://www.linkedin.com/in/er-contreras/)
 - Twitter: [@ChristianErick_](https://twitter.com/ChristianErick_)
 
 ## Show your support
