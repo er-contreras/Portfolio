@@ -9,7 +9,7 @@
 
 ## Link of Web Page
 
-- GitHub Pages: [@eri8-9](https://eri8-9.github.io/Portfolio/)
+- GitHub Pages: [@er-contreras](https://er-contreras.github.io/Portfolio/)
 
 ## Built With
 
