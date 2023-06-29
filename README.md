@@ -21,7 +21,7 @@
 
 - [GitHub](https://github.com/er-contreras)
 - [LinkedIn](https://www.linkedin.com/in/er-contreras/)
-- [@er_contreras_](https://twitter.com/er_contreras_)
+- [Twitter](https://twitter.com/er_contreras_)
 
 ## Show your support
 
@@ -33,4 +33,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE.md) licensed.
