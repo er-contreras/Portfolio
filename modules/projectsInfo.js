@@ -8,7 +8,7 @@ const projects = [
     image: '../assets/mexico-transfer.png',
     technologies: ['Ruby on Rails', 'GitHub'],
     link: 'https://github.com/er-contreras/budget_app',
-    demoLive: 'https://morning-journey-90954.herokuapp.com/',
+    demoLive: 'https://budget-app0-deb7ce080f65.herokuapp.com/',
   },
   {
     id: 2,
