@@ -5,7 +5,7 @@ const projects = [
     descriptionMobile: 'Budget App is not other app that allow us to add new payments to certain categories. You can add new categories and new payments to every category you just need to click on add new.',
     descriptionMobilePopup: 'Budget App is not other app that allow us to add new payments to certain categories.',
     descriptionDesktopPopUp: 'Budget App is not other app that allow us to add new payments to certain categories. You can add new categories and new payments to every category you just need to click on add new.',
-    image: '../assets/mexico-transfer.png',
+    image: './assets/mexico-transfer.png',
     technologies: ['Ruby on Rails', 'GitHub'],
     link: 'https://github.com/er-contreras/budget_app',
     demoLive: 'https://budget-app0-deb7ce080f65.herokuapp.com/',
