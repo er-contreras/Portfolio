@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #000000;
+  background-color: #000;
   min-height: 100vh;
 }
 
@@ -50,7 +50,7 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: #000000;
+  background-color: #000;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -88,7 +88,7 @@ div ul {
 }
 
 .menu-dropdown li i {
-  color: #ffffff;
+  color: #fff;
 }
 
 h1 {
