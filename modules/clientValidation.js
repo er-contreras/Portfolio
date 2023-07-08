@@ -42,7 +42,7 @@ form.addEventListener('submit', (event) => {
   if (valid) {
     valid = validateEmail(email);
   }
-  
+
   if (!valid) {
     event.preventDefault();
   }
